@@ -3,15 +3,6 @@ import "./App.css";
 import Navbar from "./components/ui/Navbar";
 
 function App() {
-  const header = () => {
-    return (
-      <div>
-        <h1>home</h1>
-        <h1>home</h1>
-        <h1>home</h1>
-      </div>
-    );
-  };
   return (
     <div className="App">
       <Navbar />
