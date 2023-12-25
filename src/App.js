@@ -1,15 +1,16 @@
-import logo from "./components/icons/logo.svg";
-import "./App.css";
-import Navbar from "./components/ui/Navbar";
+import logo from './components/icons/logo.svg';
+import './App.css';
+import Navbar from './components/ui/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <header />
-      <header className="App-header">
+      <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      </div>
+      <Navbar />
+
     </div>
   );
 }
