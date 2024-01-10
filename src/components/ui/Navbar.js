@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <>
       <nav className="navigation">
-        <a href="/" className="brand-name fw-bolder">
-          2DRIJA
+        <a href="/" className="brand-name ">
+          <p className="fw-bold">2DRIJA</p>
         </a>
         <button
           className="hamburger"

@@ -1,13 +1,7 @@
-.header1{
-    text-decoration: solid;
+.logo {
+  width: 45px;
+  height: auto;
 }
-
-
-.logo{
-    width: 45px;
-    height: auto;
-}
-
 
 .navigation {
   height: 60px;
@@ -22,9 +16,7 @@
 }
 
 .brand-name {
-  text-decoration: none;
   color: black;
-  font-size: 1.3rem;
   margin-left: 1rem;
 }
 .navigation-menu {
@@ -36,17 +28,16 @@
   padding: 0;
 }
 .navigation-menu li {
-   /* removes default disc bullet for li tags and applies margin to left & right side */
+  /* removes default disc bullet for li tags and applies margin to left & right side */
   list-style-type: none;
   margin: 0 1rem;
 }
 .navigation-menu li a {
-   /* increases the surface area of the anchor tag to span more than just the anchor text */
+  /* increases the surface area of the anchor tag to span more than just the anchor text */
   text-decoration: none;
   display: block;
   width: 100%;
 }
-
 
 .hamburger {
   /* removes default border on button element */
@@ -58,7 +49,7 @@
   background-color: #283b8b;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
- /* positions the icon to the right and center aligns it vertically */
+  /* positions the icon to the right and center aligns it vertically */
   position: absolute;
   top: 50%;
   right: 25px;
@@ -71,15 +62,15 @@
 }
 
 @media screen and (max-width: 768px) {
-   .hamburger {
+  .hamburger {
     display: block;
   }
-   .navigation-menu ul {
+  .navigation-menu ul {
     display: none;
     position: absolute;
     top: 60px;
     left: 0;
-     flex-direction: column;
+    flex-direction: column;
 
     width: 100%;
     height: calc(100vh - 77px);
@@ -102,7 +93,7 @@
     background-color: #eee;
   }
 
-    .navigation-menu.expanded ul {
+  .navigation-menu.expanded ul {
     display: block;
   }
 }
