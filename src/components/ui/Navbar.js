@@ -1,8 +1,9 @@
-import { useState } from "react";
+// import { useState } from 'react';
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
+
   return (
     <>
       <nav className="navigation">
@@ -14,7 +15,6 @@ const Navbar = () => {
           onClick={() => {
             setIsNavbarExpanded(!isNavbarExpanded);
           }}>
-          {/* icon from heroicons.com */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -47,5 +47,4 @@ const Navbar = () => {
     </>
   );
 };
-
 export default Navbar;
