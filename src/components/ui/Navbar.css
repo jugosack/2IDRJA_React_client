@@ -48,7 +48,7 @@
   border-radius: 50%;
   background-color: #283b8b;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   /* positions the icon to the right and center aligns it vertically */
   position: absolute;
   top: 50%;
@@ -58,7 +58,7 @@
 }
 
 .hamburger:hover {
-  background-color: #2642af;
+  background-color: purple;
 }
 
 @media screen and (max-width: 768px) {
@@ -71,11 +71,11 @@
     top: 60px;
     left: 0;
     flex-direction: column;
-
+    color: whitesmoke;
     width: 100%;
     height: calc(100vh - 77px);
-    background-color: white;
-    border-top: 1px solid black;
+    background-color: rgba(9, 9, 9, 0.1);
+    /* border-top: 1px solid black; */
   }
 
   .navigation-menu li {
@@ -90,7 +90,12 @@
     padding: 1.5rem 0;
   }
   .navigation-menu li:hover {
-    background-color: #eee;
+    background: rgb(63, 94, 251);
+    background: linear-gradient(
+      90deg,
+      rgba(63, 94, 251, 0.5) 0%,
+      rgba(252, 70, 107, 0.5) 100%
+    );
   }
 
   .navigation-menu.expanded ul {

@@ -1,6 +1,5 @@
-// import { useState } from 'react';
+import { useState } from "react";
 import "./Navbar.css";
-
 const Navbar = () => {
   const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
 
@@ -11,6 +10,8 @@ const Navbar = () => {
           <p className="fw-bold">2DRIJA</p>
         </a>
         <button
+          type="button"
+          aria-label="hamburger"
           className="hamburger"
           onClick={() => {
             setIsNavbarExpanded(!isNavbarExpanded);
