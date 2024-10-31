@@ -1,0 +1,95 @@
+.background-wallpaper-Login {
+  background: rgb(193, 147, 197);
+  background: linear-gradient(90deg, rgba(193, 147, 197, 1) 0%, rgba(123, 198, 204, 1) 100%);
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* form control general styling */
+
+.form-control {
+  z-index: 2;
+  height: 40px;
+  box-shadow: none;
+  color: #3c080b;
+}
+.form-control:focus {
+  border-color: #b85c8f;
+}
+
+.signup-form {
+  width: 450px;
+  margin: 0 auto;
+  padding: 30px 0px;
+  font-size: 16px;
+}
+
+.signup-form h2 {
+  color: #636363;
+  margin: 0 0 15px;
+  position: relative;
+  text-align: center;
+}
+
+.signup-form h2:before,
+.signup-form h2:after {
+  content: '';
+  height: 2px;
+  width: 30%;
+  background: #d4d4d4;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.signup-form form {
+  color: #999;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #f2f3f7;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.signup-form .btn-login {
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 400px;
+  outline: none !important;
+}
+
+.signup-form a {
+  color: #062d59;
+  text-decoration: underline;
+}
+
+.signup-form a:hover {
+  text-decoration: none;
+}
+.signup-form form a {
+  color: #3a1995;
+  text-decoration: none;
+}
+.signup-form form a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile breakpoint (e.g., 480px) */
+@media (max-width: 480px) {
+  .form-control {
+    font-size: 0.8rem;
+    width: 270px !important;
+  }
+  .signup-form {
+    width: 310px !important;
+  }
+
+  .btn-login {
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px !important;
+    outline: none !important;
+  }
+}

@@ -1,0 +1,47 @@
+.background {
+  background-image: url('/public/images/BGImage2.jpg');
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* width: 100vw; */
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.card-parent {
+  height: 42em;
+  /* width: 22em; */
+}
+
+/* @media (max-width: 1000px) {
+  {
+    flex-direction: column;
+  }
+} */
+
+.course-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-card-wrapper {
+  flex: 1 1 300px; /* Adjust the width of each card as needed */
+  margin: 10px; /* Adjust margin between cards */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .course-card-wrapper {
+    flex-basis: calc(50% - 20px); /* Display two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .course-card-wrapper {
+    flex-basis: 100%; /* Display one card per row on even smaller screens */
+  }
+}
