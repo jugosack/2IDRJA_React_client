@@ -33,21 +33,23 @@ const About = () => (
         </h1>
         <div>
           <p className="paragraph ps-5 pe-5 pt-5 paragraph-justified lh-lg">
-            Welcome to [Platform Name] – Where Innovation Meets Expertise in Programming Education
-            Since 2004! At [Platform Name], we have been at the forefront of empowering aspiring
-            developers and designers to unleash their full potential in the dynamic world of
-            programming and web development. Established in 2004, our commitment to excellence has
-            driven us to continually evolve and offer cutting-edge courses that reflect the latest
-            industry trends. Our comprehensive programming curriculum encompasses a range of
-            courses designed to equip you with the skills demanded by today&apos;s tech landscape. Dive
-            into the fundamentals with our Front-End Development course, covering HTML, CSS, and
-            JavaScript, laying the groundwork for your programming journey. Elevate your expertise
-            further with our React.js course, exploring the intricacies of one of the most popular
-            JavaScript libraries used in modern web development. For those passionate about
-            crafting seamless user experiences, our UI/UX Design course provides a deep dive into
-            the principles, processes, and tools essential for creating captivating digital
-            interfaces.
+            Welcome to [Platform Name] – Where Innovation Meets Expertise in Programming Education Since 2004!
+            At [Platform Name], we have been at the forefront of empowering aspiring developers and designers
+            to unleash their full potential in the dynamic world of programming and web development. Established
+            in 2004, our commitment to excellence has driven us to continually evolve and offer cutting-edge
+            courses that reflect the latest industry trends.
+
+            Our comprehensive programming curriculum encompasses a range of courses designed to equip you with
+            the skills demanded by today&apos;s tech landscape. Dive into the fundamentals with our Front-End
+            Development course, covering HTML, CSS, and JavaScript, laying the groundwork for your programming
+            journey.
+
+            Elevate your expertise further with our React.js course, exploring the intricacies of one of the most
+            popular JavaScript libraries used in modern web development. For those passionate about crafting
+            seamless user experiences, our UI/UX Design course provides a deep dive into the principles, processes,
+            and tools essential for creating captivating digital interfaces.
           </p>
+
         </div>
       </div>
       {/* right column */}
