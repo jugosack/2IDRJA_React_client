@@ -104,7 +104,7 @@ const Navbar = (props) =>
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <img src={userLogo} />
+                    <img src={userLogo} alt="" />
                   </Link>
                   <ul className="dropdown-menu dropdown-menu-end">
                     <li>

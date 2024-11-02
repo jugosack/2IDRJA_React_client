@@ -22,6 +22,7 @@ const Testimonials = () => (
               className="rounded-circle shadow-1-strong"
               width="150"
               height="150"
+              alt=""
             />
           </div>
           <h5 className="mb-3">Maria Smantha</h5>
@@ -57,6 +58,7 @@ const Testimonials = () => (
               className="rounded-circle shadow-1-strong"
               width="150"
               height="150"
+              alt=""
             />
           </div>
           <h5 className="mb-3">Lisa Cudrow</h5>
@@ -91,6 +93,7 @@ const Testimonials = () => (
               className="rounded-circle shadow-1-strong"
               width="150"
               height="150"
+              alt=""
             />
           </div>
           <h5 className="mb-3">John Smith</h5>

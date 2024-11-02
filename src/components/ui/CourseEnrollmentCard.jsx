@@ -6,7 +6,7 @@ const CourseEnrollmentCard = (props) => (
     <>
       <div className="enrollment-card d-flex justify-content-center align-items-cente m-3">
         <div className="card-background">
-          <img className="card-wallpaper rounded-top" src={props.image} alt="image" />
+          <img className="card-wallpaper rounded-top" src={props.image} alt="" />
           <div className="card-body justify-content-center align-items-center pt-4">
             <h6 className="card-title text-center text-secondary fs-3 fw-bold pb-4">
               {props.title}

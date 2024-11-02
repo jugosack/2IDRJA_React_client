@@ -7,7 +7,7 @@ const CourseCard = (props) => (
       <img
         className="d-flex image-fluid rounded-top course-image shadow-lg"
         src={props.image}
-        alt="image of course"
+        alt="course"
       />
       <div className="d-flex flex-row p-3 mt-3 rounded justify-content-center align-items-center w-100">
         <p className="cource-paragraph fs-2">{props.title}</p>

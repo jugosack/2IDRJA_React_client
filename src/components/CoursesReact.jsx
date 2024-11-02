@@ -15,7 +15,7 @@ const CourseReact = () => (
     <img
       className="img-fluid w-100 cover-img"
       src={coursesReact}
-      alt="Frontend course cover image"
+      alt="Frontend course"
     />
     <div className="d-flex flex-column my-5 frame">
       <h1 className="mt-3 mb-2 ms-5">Front-end development</h1>
@@ -77,7 +77,7 @@ const CourseReact = () => (
       <div className="d-flex flex-column flex-lg-row mt-4 mb-3">
         {/* image */}
         <div className="d-flex flex-column col-lg-4 col-12 ">
-          <img className="img-fluid" src={profileImg1} alt="Project Image" />
+          <img className="img-fluid" src={profileImg1} alt="Project" />
         </div>
         {/* text */}
         <div className="d-flex flex-column col-lg-7 col-12  mt-2 align-self-start ">
@@ -139,7 +139,7 @@ const CourseReact = () => (
         </div>
         {/* image */}
         <div className="d-flex flex-column col-lg-4 col-12 align-self-start">
-          <img className="img-fluid" src={profileImg2} alt="Project Image" />
+          <img className="img-fluid" src={profileImg2} alt="Project" />
         </div>
       </div>
 
@@ -147,7 +147,7 @@ const CourseReact = () => (
       <div className="d-flex flex-column flex-lg-row mt-4 mb-3">
         {/* image */}
         <div className="d-flex flex-column col-lg-4 col-12 ">
-          <img className="img-fluid" src={profileImg3} alt="Project Image" />
+          <img className="img-fluid" src={profileImg3} alt="Project" />
         </div>
         {/* text */}
         <div className="d-flex flex-column col-lg-7 col-12  mt-2 align-self-start ">

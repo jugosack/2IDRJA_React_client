@@ -44,14 +44,14 @@ const Project = () => (
         </p>
       </div>
       <div className="d-flex flex-row flex-lg-col col-lg-6 pe-5 p-3">
-        <img className="img-fluid" src={projectimg} alt="Project Image" />
+        <img className="img-fluid" src={projectimg} alt="Project" />
       </div>
     </div>
 
     {/* 2nd row */}
     <div className="d-flex flex-column flex-lg-row  ps-lg-5 w-100 w-lg-auto py-5">
       <div className="d-flex flex-row flex-lg-col col-lg-6 pe-5 p-3 col-12 order-lg-1 order-2">
-        <img className="img-fluid" src={projectimg} alt="Project Image" />
+        <img className="img-fluid" src={projectimg} alt="Project" />
       </div>
       <div className="frame d-flex flex-column col-lg-6 p-3 col-12 order-lg-2 order-1">
         <h1 className="d-flex flex-row-reverse mt-3 mb-3 ms-5 pe-5">Name of project</h1>

@@ -54,7 +54,7 @@ const About = () => (
       </div>
       {/* right column */}
       <div className="d-flex flex-column col-lg-6 col-sm-12  py-5 ">
-        <img className="img-fluid library-image" src={library} alt="image of library" />
+        <img className="img-fluid library-image" src={library} alt="A Library" />
         <div className="boxes d-flex flex-column mx-3 rounded bg-gray-200 p-3 shadow-lg">
           <div className="inside--boxes d-flex flex-row justify-content-around">
             <div className="box d-flex flex-column p-3 m-3 rounded bg-gray-100 w-100 shadow">
