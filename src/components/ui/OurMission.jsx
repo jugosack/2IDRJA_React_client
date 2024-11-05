@@ -24,9 +24,9 @@ const OurMisiion = () => (
           </div>
           <div className="ps-lg-5">
             <p className="fw-bold fs-5 text-start ps-5 pb-5 pe-3 pe-md-0">
-              "Unleashing Innovation, Igniting Change: Where
+              &quot;Unleashing Innovation, Igniting Change: Where
               <br />
-              Boundless Research Shapes a Limitless Future!"
+              Boundless Research Shapes a Limitless Future!&quot;
             </p>
           </div>
         </div>
@@ -100,8 +100,8 @@ const OurMisiion = () => (
               <p className="text-start fs-3 fw-bold  ms-5">PURPOSE</p>
               <div>
                 <p className="text-start fs-4 ms-5 me-3">
-                  "Meaningful work gives life purpose & connects you to something bigger than
-                  yourself."
+                  &quot;Meaningful work gives life purpose & connects you to something bigger than
+                  yourself.&quot;
                 </p>
                 <p className="text-start mb-2 ms-5">
                   <small className="text-body-secondary">Germany Kent</small>
