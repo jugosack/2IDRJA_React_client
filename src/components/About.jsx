@@ -86,27 +86,27 @@ const About = () => (
       <ul className="ps-5 ms-5">
         <li>
           <p className="paragraph ps-5 pe-5 pt-2">
-            "CodeCraft Pro" - A Front-End Development Project: Students demonstrate their mastery
+            &quot;CodeCraft Pro&quot; - A Front-End Development Project: Students demonstrate their mastery
             of HTML, CSS, and JavaScript by crafting a responsive and visually engaging website.
           </p>
         </li>
         <li>
           <p className="paragraph ps-5 pe-5 pt-2">
-            "ReactRise" - Mastering React.js: This project showcases the application of React.js
+            &quot;ReactRise&quot; - Mastering React.js: This project showcases the application of React.js
             in building a dynamic and interactive web application, highlighting the power and
             versatility of this cutting-edge technology.
           </p>
         </li>
         <li>
           <p className="paragraph ps-5 pe-5 pt-2">
-            "PixelPerfect Designs" - UI/UX Design Showcase: Students unveil their creativity and
+            &quot;PixelPerfect Designs&quot; - UI/UX Design Showcase: Students unveil their creativity and
             user-centric design skills with a series of captivating UI/UX projects, crafted using
             industry-standard tools such as Figma.
           </p>
         </li>
         <li>
           <p className="paragraph ps-5 pe-5 pt-2">
-            "InnoCode Academy" - Education-Driven Project: This collaborative endeavor highlights
+            &quot;InnoCode Academy&quot; - Education-Driven Project: This collaborative endeavor highlights
             the impact of effective programming education, demonstrating the transformative power
             of knowledge in shaping innovative solutions.
           </p>
@@ -115,7 +115,7 @@ const About = () => (
           <p className="paragraph ps-5 pe-5 pt-5">
             At [Platform Name], our mission is to foster a collaborative learning environment
             where passion meets expertise. Join us on this educational journey, where each course
-            is a step toward realizing your programming aspirations. Enroll today, and let's code
+            is a step toward realizing your programming aspirations. Enroll today, and let&apos;s code
             the future together!
           </p>
         </li>

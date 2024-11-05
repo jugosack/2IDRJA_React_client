@@ -42,7 +42,7 @@ const Frontend = () => (
         Throughout the course, our expert instructors will guide you through the intricacies of
         these foundational technologies, ensuring you gain a deep understanding of their
         capabilities and nuances. From crafting pixel-perfect layouts with HTML and CSS to
-        implementing dynamic functionality with JavaScript, you'll acquire the proficiency to
+        implementing dynamic functionality with JavaScript, you&apos;ll acquire the proficiency to
         bring your creative vision to life.
         <br />
         <br />
