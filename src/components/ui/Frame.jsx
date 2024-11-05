@@ -1,18 +1,25 @@
-import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
-interface FrameProps{
-    className?:string;
-    header?:String;
+const Frame = ({ className, header }) => (
+  <>
+    {/* You can use the className and header props as needed */}
+    <div className={className}>
+      {header && <h1>{header}</h1>}
+      {/* Add more content here as necessary */}
+    </div>
+  </>
+);
 
+// Prop types validation
+Frame.propTypes = {
+  className: PropTypes.string,
+  header: PropTypes.string,
+};
 
-}
-
-const Frame:React.FC<FrameProps> = ({
-    className,
-    header,
-}) => {
-  return <>
-  </>;
+// Default props declaration
+Frame.defaultProps = {
+  className: '', // Default to an empty string
+  header: 'Default Header', // Default to a placeholder header
 };
 
 export default Frame;

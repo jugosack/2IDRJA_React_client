@@ -35,12 +35,12 @@ const Login = () => (
             </div>
             {/* footer of form */}
             <div className="form-group d-flex justify-content-between">
-              <label>
-                <input type="checkbox" />
+              <label htmlFor="rememberMeCheckbox">
+                <input type="checkbox" id="rememberMeCheckbox" />
                 {' '}
                 Remember me
               </label>
-              <Link to="#">Forgot password?</Link>
+              <Link to="/forgot-password">Forgot password?</Link>
             </div>
             <div className="form-group  col-12">
               <button type="submit" className="btn btn-info btn-lg col-12">

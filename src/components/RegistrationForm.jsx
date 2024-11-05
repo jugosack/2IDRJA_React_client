@@ -91,8 +91,8 @@ const RegistrationForm = () => {
                 />
               </div>
               <div className="form-group">
-                <label className="form-check-label">
-                  <input type="checkbox" required="required" />
+                <label className="form-check-label" htmlFor="termsCheckbox">
+                  <input type="checkbox" id="termsCheckbox" required="required" />
                   {' '}
                   I accept the
                   {' '}

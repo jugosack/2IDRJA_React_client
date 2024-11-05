@@ -52,7 +52,7 @@ const Footer = () => (
           className="form-control contact-us-form email-contact email-form"
           placeholder="Your email address ..."
         />
-        <button className="contact-us-btn mt-3 ps-1 pe-1 ">
+        <button type="button" className="contact-us-btn mt-3 ps-1 pe-1 ">
           Contact us
           <img src={Send} alt="send" />
         </button>
