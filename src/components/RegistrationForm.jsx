@@ -91,15 +91,19 @@ const RegistrationForm = () => {
                 />
               </div>
               <div className="form-group">
-                <label className="form-check-label ">
+                <label className="form-check-label">
                   <input type="checkbox" required="required" />
                   {' '}
                   I accept the
                   {' '}
-                  <a href="#">Terms of Use</a>
+                  <span className="text-blue" style={{ cursor: 'pointer' }}>
+                    Terms of Use
+                  </span>
                   {' '}
                   &amp;
-                  <a href="#">Privacy Policy</a>
+                  <span className="text-blue" style={{ cursor: 'pointer' }}>
+                    Privacy Policy
+                  </span>
                 </label>
               </div>
               <div className="form-group btn-registry col-12">
