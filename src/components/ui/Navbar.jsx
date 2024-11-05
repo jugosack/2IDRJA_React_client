@@ -35,14 +35,14 @@ const Navbar = ({ className }) => (
               </Link>
             </li>
             <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle text-white"
-                role="button"
+              <button
+                className="nav-link dropdown-toggle text-white btn"
+                type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Projects
-              </Link>
+              </button>
               <ul className="dropdown-menu">
                 <li>
                   <Link className="dropdown-item" to="/projectscoding">
@@ -57,14 +57,14 @@ const Navbar = ({ className }) => (
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle text-white"
-                role="button"
+              <button
+                className="nav-link dropdown-toggle text-white btn"
+                type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Courses
-              </Link>
+              </button>
               <ul className="dropdown-menu">
                 <li>
                   <Link className="dropdown-item" to="/coursesfrontend">
@@ -93,14 +93,14 @@ const Navbar = ({ className }) => (
         <div className="ms-auto">
           <ul className="navbar-nav mb-lg-0 user-icon text-end">
             <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle text-white"
-                role="button"
+              <button
+                className="nav-link dropdown-toggle text-white btn"
+                type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <img src={userLogo} alt="User Icon" />
-              </Link>
+              </button>
               <ul className="dropdown-menu dropdown-menu-end">
                 <li>
                   <Link className="dropdown-item" to="/register">

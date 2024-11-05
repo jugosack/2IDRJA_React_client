@@ -39,9 +39,9 @@ const CourseCard = ({
 
 CourseCard.propTypes = {
   image: PropTypes.string.isRequired,
+  discount: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   duration: PropTypes.string.isRequired,
-  discount: PropTypes.string,
   price: PropTypes.string.isRequired,
   places: PropTypes.string.isRequired,
 };
