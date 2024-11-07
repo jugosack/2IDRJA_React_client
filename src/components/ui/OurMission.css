@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@4000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Lora', serif;
+  text-align: start;
+}
+
+/* .paragraph {
+  text-align: justify !important;
+} */
+
+hr {
+  margin-inline-end: 155px;
+}
+
+/* Lines */
+.lines {
+  position: relative;
+  width: 550px;
+  height: 6px;
+}
+
+.overlap-group {
+  position: relative;
+
+  /* height: 6px; */
+}
+
+.frame .overlap-group {
+  position: relative;
+  height: 6px;
+}
+
+.rectangle {
+  /* width: 550px; */
+
+  /* height: 2px; */
+
+  /* top: 4px; */
+  background-color: #344152;
+  position: absolute;
+  left: 0;
+}
+
+.frame .rectangle {
+  width: 450px;
+  height: 2px;
+  top: 4px;
+  background-color: #344152;
+  position: absolute;
+  left: 0;
+}
+
+.rectangle-2 {
+  /* width: 275px; */
+
+  /* height: 6px; */
+  top: 0;
+  background-color: #344152;
+  position: absolute;
+  left: 0;
+}
+
+.frame .rectangle-2 {
+  width: 255px;
+  height: 6px;
+  top: 0;
+  background-color: #344152;
+  position: absolute;
+  left: 0;
+}
+
+.background-info {
+  background-color: rgba(108, 147, 168, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .flex-lg-row,
+  .flex-md-column {
+    flex-direction: column;
+  }
+
+  .paragraph-justified {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .frame {
+    flex-direction: column;
+  }
+}
