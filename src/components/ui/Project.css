@@ -7,16 +7,19 @@ h3 {
 }
 
 /* Here are placed all css properties that are same for both Projects, CodingProjects and ResearchProject. */
+
 /* Lines-left */
 .frame .lines {
   position: relative;
   width: 550px;
   height: 6px;
 }
+
 .frame .overlap-group {
   position: relative;
   height: 6px;
 }
+
 .frame .rectangle {
   width: 550px;
   height: 2px;
@@ -25,6 +28,7 @@ h3 {
   position: absolute;
   left: 0;
 }
+
 .frame .rectangle-2 {
   width: 275px;
   height: 6px;
@@ -42,10 +46,12 @@ h3 {
   width: 550px;
   height: 6px;
 }
+
 .frame-right .overlap-group-right {
   position: relative;
   height: 6px;
 }
+
 .frame-right .rectangle-right {
   width: 550px;
   height: 2px;
@@ -54,6 +60,7 @@ h3 {
   position: absolute;
   right: 0;
 }
+
 .frame-right .rectangle-2-right {
   width: 275px;
   height: 6px;
