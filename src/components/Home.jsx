@@ -34,12 +34,22 @@ function Home() {
         </div>
         <div className="course-list-wrapper">
           <CourseCard
-            image="./images/html-css-js-wallpapers.jpg"
-            title="Frontend course"
+            image="./images/ReactNode.jpg"
+            title="React & Javascript"
             duration="01 March - 15 April"
             discount="150$"
             price="99$"
-            places="7 places left"
+            places="4 places left"
+          />
+        </div>
+        <div className="course-list-wrapper">
+          <CourseCard
+            image="./images/java.jpg"
+            title="Java"
+            duration="01 November - 15 November"
+            discount="150$"
+            price="99$"
+            places="13 places left"
           />
         </div>
         <div className="course-list-wrapper">
