@@ -1,3 +1,52 @@
+
+.image-container {
+  padding-top: 0; /* Ensure no padding by default */
+}
+
+/* For screens exactly 1024px wide */
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .image-container {
+    padding-top: 120px !important;
+  }
+}
+
+/* For small screens, make sure there's no extra padding */
+@media (max-width: 576px) {
+  .image-container {
+    padding-top: 0 !important; /* Remove unwanted padding on small screens */
+  }
+  .scroll-container {
+    height: 300px; /* Adjusted height for small screens */
+  }
+}
+
+.button-container .custom-btn {
+  background-color: lightgray;  /* Light gray background with !important */
+  border-radius: 8px;           /* Slightly rounded corners */
+  color: black;                 /* Black text color */
+  transition: background-color 2.1s;       /* Smooth color transition */
+  padding-left: 16px;                      /* Custom padding */
+  padding-right: 16px;                     /* Custom padding */
+}
+
+.button-container .custom-btn:hover {
+  background-color:#24263a;  /* Darker gray when hovered */
+  color: white;     /* White text when hovered */
+  transition: background-color 0.5s; 
+  
+}
+.button-container{
+  display: flex;
+  flex-wrap: wrap;           /* Allows buttons to wrap onto a new row */
+  gap: 0.5rem; 
+}
+@media (max-width: 576px) {
+.button-container {    
+display: flex;
+justify-content:center; 
+}
+}
+
 h1 {
   font-weight: 600;
 }
@@ -5,7 +54,6 @@ h1 {
 h3 {
   font-weight: bolder;
 }
-
 /* Here are placed all css properties that are same for both Projects, CodingProjects and ResearchProject. */
 
 /* Lines-left */
@@ -75,30 +123,46 @@ h3 {
 .img-thumbnail {
   border: none !important;
 }
+
 .scroll-container {
   overflow: hidden;
-  height: 520px; /* Adjust height to control visible area */
+  height: 520px;
+  /* Adjust height to control visible area */
   position: relative;
 }
+
+
+@media (max-width: 576px) {
+  .scroll-container {
+    height: 300px;
+    /* Adjusted height for small screens */
+  }
+}
+
 /* Scrolling effect for the image */
 .scroll-image {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 0;
-  animation: scrollUp 35s linear infinite; /* Adjust the duration to control speed */
+  animation: scrollUp 35s linear infinite;
+  /* Adjust the duration to control speed */
 }
+
 /* Animation for scrolling */
 @keyframes scrollUp {
   from {
-      transform: translateY(0);
+    transform: translateY(0);
   }
+
   to {
-      transform: translateY(-50%); /* Scroll up by half the container's height to loop */
+    transform: translateY(-50%);
+    /* Scroll up by half the container's height to loop */
   }
 }
 
 @media (max-width: 768px) {
+
   /* Make images full-width on tablets */
   .scroll-container img {
     width: 100%;
@@ -112,10 +176,19 @@ h3 {
   position: relative;
 }
 
+@media (max-width: 576px) {
+  .col-12 .scroll-container {
+    height: 300px;
+    /* Adjusted height for small screens */
+  }
+}
+
 .scroll-image img {
   width: 100%;
-  pointer-events: none; /* Prevent image selection */
-  user-select: none;    /* Prevent text/image selection */
+  pointer-events: none;
+  /* Prevent image selection */
+  user-select: none;
+  /* Prevent text/image selection */
 }
 
 /* Unselectable class to prevent selection */

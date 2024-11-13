@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import projectimg from '../images/AsprovaltaM.png';
 import projectimg2 from '../images/programming courses.png';
 import './Project.css';
@@ -20,34 +21,57 @@ const Project = () => (
           </div> */}
         {/* <---------------------lines---------------------> */}
 
-        <h3 className="mb-2 mx-5">Appartment booking website</h3>
-        <p className="pt-5 mx-3 paragraph-justified">
+        <h3 className="mb-1 mx-5">Appartment booking website</h3>
+        <p className="pt-3 mx-3 ">
           This is our first web programming project, it is a fully functional
           platform for booking apartments in Asprovalta.
           <br />
           <br />
-          The website was built using React, Bootstrap, HTML, and CSS and creates a seamless,
+          The website was built using React, Bootstrap and Ruby on Rails to create a seamless,
           user-friendly experience. It features a responsive front end design to adapt to any
-          screen size whether it is on mobile, tablet or desktop and a secure back end to
-          protect sensitive user information.
+          screen size including mobile.
           <br />
           <br />
-          Visitors are able to create accounts, while signing up they will receive an e-mail
-          to verify their e-mail address, then they can log in, search for available bookings
-          based on specific dates and months.
-          <br />
-          <br />
-          We’ve integrated a secure booking and payment system, allowing users to conveniently
+          Visitors are able to create accounts, while signing up
+          they will receive an e-mail to verify their e-mail address, then they can log in,
+          search for available bookings based on specific dates and months.
+          We have integrated a secure booking and payment system, allowing users to conveniently
           reserve and pay for their chosen apartments.
           <br />
           <br />
           This project reflects our commitment to delivering functional, real-world
           applications and demonstrates our growing expertise in web development.
-          Our team has worked diligently to ensure the platform is user-centric, with
-          features that simplify and enhance the booking experience.
+          Our team has worked diligently to ensure the platform offers the best possible
+          user experience.
         </p>
+        <div className="button-container">
+          <Link
+            to="/coursesreact"
+            className="btn custom-btn px-3 m-1 ms-3"
+          >
+            React
+          </Link>
+          <Link
+            to="/coursesfrontend"
+            className="btn custom-btn px-3 m-1"
+          >
+            CSS
+          </Link>
+          <Link
+            to="/coursesfrontend"
+            className="btn custom-btn px-3 m-1"
+          >
+            Bootstrap
+          </Link>
+          <Link
+            to="/coursesuiux"
+            className="btn custom-btn px-3 m-1"
+          >
+            UI
+          </Link>
+        </div>
       </div>
-      <div className="col-xs-6 col-md-12 col-lg-6 p-4">
+      <div className="col-xs-6 col-md-12 col-lg-6 p-4 image-container">
         <div className="scroll-container">
           <div className="scroll-image">
             <img className="img-fluid" src={projectimg} alt="Project" />
@@ -58,10 +82,8 @@ const Project = () => (
     </div>
 
     {/* 2nd row */}
-    {/* <div className="d-flex flex-column flex-lg-row  ps-lg-5 w-100 w-lg-auto py-5">
-      <div className="d-flex flex-row flex-lg-col col-lg-6 pe-5 p-3 col-12 order-lg-1 order-2"> */}
     <div className="d-flex flex-column flex-lg-row w-100 py-5">
-      <div className="col-12 col-lg-6 p-4 order-lg-1 order-2">
+      <div className="col-12 col-lg-6 p-4 order-lg-1 order-2 image-container">
         <div className="scroll-container">
           <div className="scroll-image">
             <img className="img-fluid unselectable" src={projectimg2} alt="Project" />
@@ -73,7 +95,7 @@ const Project = () => (
       <div className="frame d-flex flex-column col-12 col-lg-6 p-3 order-lg-2 order-1">
         <h1 className="mt-3 mb-3 ms-3 ms-lg-5 pe-3 pe-lg-5">Inovation & Research</h1>
         <h3 className="mb-2 ms-3 ms-lg-5 pe-3 pe-lg-5">Programming courses platform</h3>
-        <p className="d-flex flex-row-reverse pt-5 pe-5 text-end paragraph-justified">
+        <p className="d-flex flex-row pt-4 px-3">
           Our project is built on a commitment to empowering future developers through accessible,
           high-quality programming courses. Created in collaboration with a team of dedicated students as
           part of their learning journey.
@@ -81,19 +103,42 @@ const Project = () => (
           <br />
           This web page offers an array of courses tailored to beginners and seasoned programmers,
           covering essential languages and frameworks such as
+          React, JavaScript, Bootstrap and C#.
           <br />
-          HTML, React, JavaScript, and C#.
           <br />
-          <br />
-          By providing hands-on resources and up-to-date content, we aim to inspire learners to push
-          their technical boundaries and foster creative problem-solving skills. With each course,
-          students engage in practical exercises and interactive lessons, designed to deepen
-          understanding and spark curiosity in the vast world of web development.
+          With each course, students engage in practical exercises and interactive lessons,
+          designed to deepen understanding and spark curiosity in the vast world of web development.
           <br />
           <br />
           We believe in the transformative power of technology and the importance of equipping
           learners with the tools to thrive in a tech-driven world.
         </p>
+        <div className="button-container">
+          <Link
+            to="/coursesreact"
+            className="btn custom-btn px-3 m-1 ms-3"
+          >
+            React
+          </Link>
+          <Link
+            to="/coursesfrontend"
+            className="btn custom-btn px-3 m-1"
+          >
+            Java Script
+          </Link>
+          <Link
+            to="/coursesfrontend"
+            className="btn custom-btn px-3 m-1"
+          >
+            CSS
+          </Link>
+          <Link
+            to="/coursesuiux"
+            className="btn custom-btn px-3 m-1"
+          >
+            UI
+          </Link>
+        </div>
       </div>
     </div>
 
