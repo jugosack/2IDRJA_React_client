@@ -80,9 +80,9 @@ const Project = () => (
         </div>
       </div>
     </div>
-
+    <div className="divider-xs" />
     {/* 2nd row */}
-    <div className="d-flex flex-column flex-lg-row w-100 py-5">
+    <div className="d-flex flex-column flex-lg-row w-100 py-lg-4">
       <div className="col-12 col-lg-6 p-4 order-lg-1 order-2 image-container">
         <div className="scroll-container">
           <div className="scroll-image">
@@ -92,8 +92,8 @@ const Project = () => (
         </div>
       </div>
 
-      <div className="frame d-flex flex-column col-12 col-lg-6 p-3 order-lg-2 order-1">
-        <h1 className="mt-3 mb-3 ms-3 ms-lg-5 pe-3 pe-lg-5">Inovation & Research</h1>
+      <div className="frame d-flex flex-column col-12 col-lg-6 order-lg-2 order-1 no-padding-onSmall">
+        <h1 className="mt-2 mb-3 ms-3 ms-lg-5 pe-3 pe-lg-5">Inovation & Research</h1>
         <h3 className="mb-2 ms-3 ms-lg-5 pe-3 pe-lg-5">Programming courses platform</h3>
         <p className="d-flex flex-row pt-4 px-3">
           Our project is built on a commitment to empowering future developers through accessible,

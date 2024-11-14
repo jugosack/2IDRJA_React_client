@@ -198,3 +198,29 @@ h3 {
   -ms-user-select: none;
   user-select: none;
 }
+
+.divider-xs {
+  display: none;                     /* Hidden by default */
+  width: 80%;                         /* Adjust width as needed */
+  height: 1px;                        /* Slightly thicker line */
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #888,                             /* Center color */
+    rgba(0, 0, 0, 0)
+  );                                  /* Gradient fades at edges */
+  border-radius: 5px;                 /* Rounded edges for a softer look */
+  margin: 10px auto 5px auto;                  /* Center with space above and below */
+}
+
+@media (max-width: 991px) {
+  .divider-xs {
+    display: block;                   /* Show only on xs screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .no-padding-onSmall {
+    padding-top: 10px !important;
+  }
+}
