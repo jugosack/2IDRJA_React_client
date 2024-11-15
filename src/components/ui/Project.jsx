@@ -44,31 +44,37 @@ const Project = () => (
           Our team has worked diligently to ensure the platform offers the best possible
           user experience.
         </p>
-        <div className="button-container">
-          <Link
-            to="/coursesreact"
-            className="btn custom-btn px-3 m-1 ms-3"
-          >
-            React
-          </Link>
-          <Link
-            to="/coursesfrontend"
-            className="btn custom-btn px-3 m-1"
-          >
-            CSS
-          </Link>
-          <Link
-            to="/coursesfrontend"
-            className="btn custom-btn px-3 m-1"
-          >
-            Bootstrap
-          </Link>
-          <Link
-            to="/coursesuiux"
-            className="btn custom-btn px-3 m-1"
-          >
-            UI
-          </Link>
+        <div className="parent-container d-flex flex-column justify-content-end" style={{ height: '100%' }}>
+          <div className="button-container">
+            <div>
+              <Link
+                to="/coursesreact"
+                className="btn custom-btn px-3 m-1 ms-3"
+              >
+                React
+              </Link>
+              <Link
+                to="/coursesfrontend"
+                className="btn custom-btn px-3 m-1"
+              >
+                CSS
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/coursesfrontend"
+                className="btn custom-btn px-3 m-1"
+              >
+                Bootstrap
+              </Link>
+              <Link
+                to="/coursesuiux"
+                className="btn custom-btn px-3 m-1"
+              >
+                UI
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
       <div className="col-xs-6 col-md-12 col-lg-6 p-4 image-container">
@@ -113,31 +119,38 @@ const Project = () => (
           We believe in the transformative power of technology and the importance of equipping
           learners with the tools to thrive in a tech-driven world.
         </p>
-        <div className="button-container">
-          <Link
-            to="/coursesreact"
-            className="btn custom-btn px-3 m-1 ms-3"
-          >
-            React
-          </Link>
-          <Link
-            to="/coursesfrontend"
-            className="btn custom-btn px-3 m-1"
-          >
-            Java Script
-          </Link>
-          <Link
-            to="/coursesfrontend"
-            className="btn custom-btn px-3 m-1"
-          >
-            CSS
-          </Link>
-          <Link
-            to="/coursesuiux"
-            className="btn custom-btn px-3 m-1"
-          >
-            UI
-          </Link>
+        <div className="parent-container d-flex flex-column justify-content-end" style={{ height: '100%' }}>
+          <div className="button-container pb-3">
+            <div>
+              <Link
+                to="/coursesreact"
+                className="btn custom-btn px-3 m-1 ms-3"
+              >
+                React
+              </Link>
+              <Link
+                to="/coursesfrontend"
+                className="btn custom-btn px-3 m-1"
+              >
+                Java Script
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/coursesfrontend"
+                className="btn custom-btn px-3 m-1"
+              >
+                CSS
+              </Link>
+              <Link
+                to="/coursesuiux"
+                className="btn custom-btn px-3 m-1"
+              >
+                UI
+              </Link>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
