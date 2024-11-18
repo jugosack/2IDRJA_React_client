@@ -1,6 +1,30 @@
 
 .image-container {
   padding-top: 0; /* Ensure no padding by default */
+  position: relative; /* Create a positioning context for child elements */
+}
+.image-container button {
+  position: absolute; /* Allows the button to be placed anywhere on the image */
+  top: 50%; /* Centers the button vertically */
+  left: 50%; /* Centers the button horizontally */
+  transform: translate(-50%, -50%); /* Adjusts positioning to the center */
+  background-color: rgba(18, 33, 95, 0.55); /* Button background color */
+  backdrop-filter: blur(5px); /* Adds a background blur effect */
+  color: white; /* Makes text color white */
+  border: none; /* Removes the border */
+  padding: 20px 40px; /* Spacing inside the button */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  border-radius: 8px; /* Rounded corners */
+  /*font-weight: bold;*/ /* Makes the text bold */
+  font-family:  Verdana,  sans-serif; /* Sets font to Arial with fallback */
+  font-size: 20px; /* Increases font size */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adds a drop shadow to the button */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Black drop shadow for the text */
+}
+
+.image-container button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  color: white; /* Text color */
 }
 
 /* For screens exactly 1024px wide */
@@ -148,7 +172,23 @@ h3 {
   flex-direction: column;
   position: absolute;
   top: 0;
-  animation: scrollUp 35s linear infinite;
+  animation: scrollUp 37s linear infinite;
+  /* Adjust the duration to control speed */
+}
+.scroll-image2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  animation: scrollUp 45s linear infinite;
+  /* Adjust the duration to control speed */
+}
+.scroll-image3 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  animation: scrollUp 18s linear infinite;
   /* Adjust the duration to control speed */
 }
 

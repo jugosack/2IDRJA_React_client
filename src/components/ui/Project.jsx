@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import projectimg from '../images/AsprovaltaM.png';
 import projectimg2 from '../images/programming courses.png';
+import fakeClothesShop from '../images/fakeClothesShop.png';
 import './Project.css';
 
 const Project = () => (
@@ -10,17 +11,6 @@ const Project = () => (
     <div className="d-flex flex-column flex-lg-row h-75 ps-lg-5 w-100 w-lg-auto">
       <div className="frame d-flex flex-column col-lg-6 p-3">
         <h1 className="mt-3 mb-3 ms-5">Asprovalta M</h1>
-        {/* <---------------------lines---------------------> */}
-        {/* <div className="box mb-4">
-            <div className="lines">
-              <div className="overlap-group">
-                <div className="rectangle" />
-                <div className="rectangle-2" />
-              </div>
-            </div>
-          </div> */}
-        {/* <---------------------lines---------------------> */}
-
         <h3 className="mb-1 mx-5">Appartment booking website</h3>
         <p className="pt-3 mx-3 ">
           This is our first web programming project, it is a fully functional
@@ -84,6 +74,9 @@ const Project = () => (
             <img className="img-fluid" src={projectimg} alt="Project" />
           </div>
         </div>
+        <a href="https://asprovaltam.com/">
+          <button type="button">See Live</button>
+        </a>
       </div>
     </div>
     <div className="divider-xs" />
@@ -91,11 +84,15 @@ const Project = () => (
     <div className="d-flex flex-column flex-lg-row w-100 py-lg-4">
       <div className="col-12 col-lg-6 p-4 order-lg-1 order-2 image-container">
         <div className="scroll-container">
-          <div className="scroll-image">
+          <div className="scroll-image scroll-image2">
             <img className="img-fluid unselectable" src={projectimg2} alt="Project" />
             <img className="img-fluid unselectable" src={projectimg2} alt="Project" />
           </div>
         </div>
+        {/* See Live button on top of the scrolling images */}
+        <a href="./">
+          <button type="button">See Live</button>
+        </a>
       </div>
 
       <div className="frame d-flex flex-column col-12 col-lg-6 order-lg-2 order-1 no-padding-onSmall">
@@ -152,6 +149,65 @@ const Project = () => (
 
           </div>
         </div>
+      </div>
+    </div>
+    <div className="divider-xs" />
+
+    {/* 3rd row */}
+    <div className="d-flex flex-column flex-lg-row w-100 p-md-1">
+      {/* Third row's text */}
+      <div className="frame d-flex flex-column col-lg-6 p-3">
+        <h1 className="mt-3 mb-3 ms-5">Fake Clothing Shop</h1>
+        <h3 className="mb-1 mx-5">clothes e-commerce platform</h3>
+        <p className="pt-3 mx-3">
+          This is website that showcases clothing for sale.
+          It was one of the early days projects made by past students.
+          <br />
+          <br />
+          It has a minimalist look. In the search box you can type &quotmen&quot , &quotwomen&quot and
+          &quotjewelry&quot to browse those categories of clothing. Clicking on the item leads to a
+          page that shows more details about that item of clothing.
+          <br />
+          <br />
+        </p>
+        <div className="parent-container d-flex flex-column justify-content-end" style={{ height: '100%' }}>
+          <div className="button-container">
+            <div>
+              <Link
+                to="/coursesreact"
+                className="btn custom-btn px-3 m-1 ms-3"
+              >
+                React
+              </Link>
+              <Link
+                to="/coursesfrontend"
+                className="btn custom-btn px-3 m-1"
+              >
+                CSS
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/coursesfrontend"
+                className="btn custom-btn px-3 m-1"
+              >
+                Bootstrap
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Third row's scrolling image */}
+      <div className="col-xs-6 col-md-12 col-lg-6 p-4 image-container">
+        <div className="scroll-container">
+          <div className="scroll-image scroll-image3">
+            <img className="img-fluid" src={fakeClothesShop} alt="Project" />
+            <img className="img-fluid" src={fakeClothesShop} alt="Project" />
+          </div>
+        </div>
+        <a href="https://fakestoreapi-898e.onrender.com/">
+          <button type="button">See Live</button>
+        </a>
       </div>
     </div>
 
