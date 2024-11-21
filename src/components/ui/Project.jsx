@@ -73,11 +73,12 @@ const Project = () => (
             <img className="img-fluid" src={projectimg} alt="Project" />
             <img className="img-fluid" src={projectimg} alt="Project" />
           </div>
+          <a href="https://asprovaltam.com/" target="_blank" rel="noopener noreferrer">
+            <button type="button">See Live</button>
+          </a>
         </div>
-        <a href="https://asprovaltam.com/">
-          <button type="button">See Live</button>
-        </a>
       </div>
+
     </div>
     <div className="divider-xs" />
     {/* 2nd row */}
@@ -88,11 +89,11 @@ const Project = () => (
             <img className="img-fluid unselectable" src={projectimg2} alt="Project" />
             <img className="img-fluid unselectable" src={projectimg2} alt="Project" />
           </div>
+          {/* SeeLive button on top of the scrolling images */}
+          <a href="./" target="_blank" rel="noopener noreferrer">
+            <button type="button">See Live</button>
+          </a>
         </div>
-        {/* See Live button on top of the scrolling images */}
-        <a href="./">
-          <button type="button">See Live</button>
-        </a>
       </div>
 
       <div className="frame d-flex flex-column col-12 col-lg-6 order-lg-2 order-1 no-padding-onSmall">
@@ -164,8 +165,8 @@ const Project = () => (
           It was one of the early days projects made by past students.
           <br />
           <br />
-          It has a minimalist look. In the search box you can type &quotmen&quot , &quotwomen&quot and
-          &quotjewelry&quot to browse those categories of clothing. Clicking on the item leads to a
+          It has a minimalist look. In the search box you can type &quot;men&quot; , &quot;women&quot; and
+          &quot;jewelry&quot; to browse those categories of clothing. Clicking on the item leads to a
           page that shows more details about that item of clothing.
           <br />
           <br />
@@ -204,13 +205,13 @@ const Project = () => (
             <img className="img-fluid" src={fakeClothesShop} alt="Project" />
             <img className="img-fluid" src={fakeClothesShop} alt="Project" />
           </div>
+          <a href="https://fakestoreapi-898e.onrender.com/" target="_blank" rel="noopener noreferrer">
+            <button type="button">See Live</button>
+          </a>
         </div>
-        <a href="https://fakestoreapi-898e.onrender.com/">
-          <button type="button">See Live</button>
-        </a>
       </div>
-    </div>
 
+    </div>
   </div>
 );
 

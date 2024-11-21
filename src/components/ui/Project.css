@@ -2,29 +2,39 @@
 .image-container {
   padding-top: 0; /* Ensure no padding by default */
   position: relative; /* Create a positioning context for child elements */
+
+  position: relative; /* Establish positioning context */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+
 }
 .image-container button {
   position: absolute; /* Allows the button to be placed anywhere on the image */
-  top: 50%; /* Centers the button vertically */
+  /*top: 95.2%; /* Centers the button vertically */
+  bottom: 0;
   left: 50%; /* Centers the button horizontally */
-  transform: translate(-50%, -50%); /* Adjusts positioning to the center */
-  background-color: rgba(18, 33, 95, 0.55); /* Button background color */
+  transform: translate(-50%); /* Adjusts positioning to the center */
+  background-color: rgba(18, 33, 95, 0.342); /* Button background color */
+  transition: background-color 1.5s; 
   backdrop-filter: blur(5px); /* Adds a background blur effect */
   color: white; /* Makes text color white */
   border: none; /* Removes the border */
-  padding: 20px 40px; /* Spacing inside the button */
+  padding: 10px 20px; /* Spacing inside the button */
   cursor: pointer; /* Pointer cursor for interactivity */
   border-radius: 8px; /* Rounded corners */
   /*font-weight: bold;*/ /* Makes the text bold */
   font-family:  Verdana,  sans-serif; /* Sets font to Arial with fallback */
   font-size: 20px; /* Increases font size */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adds a drop shadow to the button */
+ /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adds a drop shadow to the button */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Black drop shadow for the text */
+
+  width: 100%;
 }
 
 .image-container button:hover {
-  background-color: #0056b3; /* Darker background on hover */
-  color: white; /* Text color */
+  background-color: #24263a; /* Darker background on hover */
+ /* color: white; /* Text color */
+  transition: background-color 0.3s; 
 }
 
 /* For screens exactly 1024px wide */
@@ -155,6 +165,9 @@ h3 {
   min-height: 500px;
   /* Adjust height to control visible area */
   /* max-width: 900px;  */
+  position: relative;
+
+  flex: 1; /* Allow the scroll-container to grow */
   position: relative;
 }
 
