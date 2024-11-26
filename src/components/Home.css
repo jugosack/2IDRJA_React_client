@@ -1,3 +1,42 @@
+.slick-prev:before, .slick-next:before {
+  color: rgb(19, 26, 158) !important;  
+}
+
+.card {
+  padding-left: 15px;
+  margin: 0; /* Centers the card horizontally in the parent div */
+  text-align: center; /* Centers text content inside the card */
+  display: flex; /* Optionally, align content vertically */
+  flex-direction: column; /* Keeps content stacked */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+ /* min-height: 100%; /* Ensures card stretches to the max height of the tallest card */
+  box-sizing: border-box; /* Prevents padding from increasing card width */
+}
+.carouselKarticka{
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Ensures the content inside the card grows to fit the height */
+  height: 100%; /* Ensures it stretches to take the same height as the parent card */
+  box-sizing: border-box; /* Prevents padding from increasing the card width */
+}
+.card-body {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ensures vertical centering */
+  align-items: center; /* Ensures horizontal centering */
+  text-align: center; /* Centers the text */
+}
+.Karousel{
+  max-width: 300px;
+}
+.slider-container .slick-slide {
+  padding: 0 15px; /* Adds more space between each slide */
+}
+
 .background {
   background-image: url('/public/images/BGImage2.jpg');
   z-index: 1;
