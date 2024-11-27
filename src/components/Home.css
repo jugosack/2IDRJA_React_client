@@ -1,7 +1,17 @@
-.slick-prev:before, .slick-next:before {
-  color: rgb(19, 26, 158) !important;  
+
+.slick-slide .card {
+  border: none; /* Removes the border from the card element inside the slick slide */
+  box-shadow: 5px;
+  margin-bottom: 20px;
 }
 
+.slick-prev:before, .slick-next:before {
+  color: rgb(8, 10, 52) !important;  
+}
+
+.slick-dots{
+  bottom: -24px !important;
+}
 .card {
   padding-left: 15px;
   margin: 0; /* Centers the card horizontally in the parent div */
@@ -12,8 +22,18 @@
   align-items: center; /* Centers content horizontally */
  /* min-height: 100%; /* Ensures card stretches to the max height of the tallest card */
   box-sizing: border-box; /* Prevents padding from increasing card width */
+  border: none;
+}
+.carouselKarticka .card-img {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
 }
 .carouselKarticka{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: none;
   min-height: 100%;
   display: flex;
   justify-content: center;
@@ -24,12 +44,51 @@
 }
 .card-body {
   max-width: 400px;
+  min-height: 200px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Ensures vertical centering */
   align-items: center; /* Ensures horizontal centering */
   text-align: center; /* Centers the text */
 }
+@media (min-width: 767px) and (max-width: 1020px){
+  .card-body {
+    min-height: 200px; /* Display one card per row on even smaller screens */
+  }
+}
+@media (min-width: 1025px ) and (max-width: 1439px){
+  .card-body {
+    min-height: 450px; /* Display one card per row on even smaller screens */
+  }
+}
+@media (max-width: 769px) {
+  .carouselKarticka .card-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .carouselKarticka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .carouselKarticka .card-img {
+    width: 100px; /* Reduce image size */
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 1rem; /* Add spacing below the image */
+  }
+
+  .card-body h5,
+  .card-body h6 {
+    margin: 0.5rem 0; /* Adjust spacing for text */
+  }
+}
+
 .Karousel{
   max-width: 300px;
 }

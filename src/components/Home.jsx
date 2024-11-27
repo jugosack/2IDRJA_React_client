@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 import Navbar from './ui/Navbar';
 import Hero from './ui/Hero';
 import OurMisiion from './ui/OurMission';
-import Testimonials from './ui/Testimonials';
 import Footer from './ui/Footer';
 import CourseCard from './ui/CourseCard';
 import 'slick-carousel/slick/slick.css';
@@ -26,7 +25,7 @@ function CustomNextArrow({ className, style, onClick }) {
         display: 'block',
         alignItems: 'center',
         justifyContent: 'center',
-        right: '7px',
+        right: '-5px',
         zIndex: 1,
         border: 'none',
       }}
@@ -55,7 +54,7 @@ function CustomPrevArrow({ className, style, onClick }) {
       className={`${className} custom-arrow`}
       style={{
         ...style,
-        left: '7px',
+        left: '-10px',
         zIndex: 1,
         border: 'none',
       }}
@@ -88,13 +87,13 @@ function Home() {
     slidesToScroll: 1,
     swipeToSlide: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     pauseOnHover: true,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -153,126 +152,134 @@ function Home() {
         </div>
       </div>
 
-      <div className="slider-container my-4">
-        {/*eslint-disable*/}
-        <Slider {...settings}>
-          {/* eslint-enable */}
-          <div className="card">
-            <div className="carouselKarticka">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
-                alt=""
-                className="rounded-circle shadow-1-strong"
-                width="150"
-                height="150"
-              />
-              <div className="card-body">
-                <h5 className="mb-3">Maria Smantha</h5>
-                <h6 className="text-primary mb-3">Web Developer</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Quod eos id officiis hic tenetur
-                  quae quaerat ad velit ab hic
-                  tenetur.
-                </p>
+      <section className="p-3 bg-primary bg-opacity-10 ">
+        <div className="row d-flex justify-content-center">
+          <div className="col-md-10 col-xl-8 text-center">
+            <h3 className="d-flex justify-content-center mt-2 mb-4">Testimonials</h3>
+            <p className="mb-3 pb-2 mb-md-4 pb-md-0">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam
+              iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum
+              porro a pariatur veniam.
+            </p>
+          </div>
+        </div>
+        <div className="slider-container my-4">
+          {/*eslint-disable*/}
+          <Slider {...settings}>
+            {/* eslint-enable */}
+            <div className="card shadow">
+              <div className="carouselKarticka">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                  alt=""
+                  className="rounded-circle shadow-1-strong mt-3 "
+                  width="150"
+                  height="150"
+                />
+                <div className="card-body">
+                  <h5 className="mb-3">Maria Smantha</h5>
+                  <h6 className="text-primary mb-3">Web Developer</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quod eos id officiis hic tenetur
+                    quae quaerat ad velit ab hic
+                    tenetur.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            <div className="carouselKarticka">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                alt=""
-                className="rounded-circle shadow-1-strong"
-                width="150"
-                height="150"
-              />
-              <div className="card-body">
-                <h5 className="mb-3">Lisa Cudrow</h5>
-                <h6 className="text-primary mb-3">Graphic Designer</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Quod eos id officiis hic tenetur
-                  quae quaerat ad velit ab hic
-                  tenetur.
-                </p>
+            <div className="card shadow">
+              <div className="carouselKarticka">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                  alt=""
+                  className="rounded-circle shadow-1-strong mt-3"
+                  width="150"
+                  height="150"
+                />
+                <div className="card-body">
+                  <h5 className="mb-3">Lisa Cudrow</h5>
+                  <h6 className="text-primary mb-3">Graphic Designer</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quod eos id officiis hic tenetur
+                    quae quaerat ad velit ab hic
+                    tenetur.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            <div className="carouselKarticka">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
-                alt=""
-                className="rounded-circle shadow-1-strong"
-                width="150"
-                height="150"
-              />
-              <div className="card-body">
-                <h5 className="mb-3">John Smith</h5>
-                <h6 className="text-primary mb-3">Marketing Specialist</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Quod eos id officiis hic tenetur
-                  quae quaerat ad velit ab hic
-                  tenetur.
-                </p>
+            <div className="card shadow">
+              <div className="carouselKarticka">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                  alt=""
+                  className="rounded-circle shadow-1-strong mt-3"
+                  width="150"
+                  height="150"
+                />
+                <div className="card-body">
+                  <h5 className="mb-3">John Smith</h5>
+                  <h6 className="text-primary mb-3">Marketing Specialist</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quod eos id officiis hic tenetur
+                    quae quaerat ad velit ab hic
+                    tenetur.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            <div className="carouselKarticka">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
-                alt=""
-                className="rounded-circle shadow-1-strong"
-                width="150"
-                height="150"
-              />
-              <div className="card-body">
-                <h5 className="mb-3">Jessica Storm</h5>
-                <h6 className="text-primary mb-3">Web app enthusiast</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Quod eos id officiis hic tenetur
-                  quae quaerat ad velit ab hic
-                  tenetur.
-                </p>
+            <div className="card shadow">
+              <div className="carouselKarticka">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                  alt=""
+                  className="rounded-circle shadow-1-strong mt-3"
+                  width="150"
+                  height="150"
+                />
+                <div className="card-body">
+                  <h5 className="mb-3">Jessica Storm</h5>
+                  <h6 className="text-primary mb-3">Web app enthusiast</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quod eos id officiis hic tenetur
+                    quae quaerat ad velit ab hic
+                    tenetur.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="card">
-            <div className="carouselKarticka">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
-                alt=""
-                className="rounded-circle shadow-1-strong"
-                width="150"
-                height="150"
-              />
-              <div className="card-body">
-                <h5 className="mb-3">Bonnie West</h5>
-                <h6 className="text-primary mb-3">E-commerce Connoisseur</h6>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Quod eos id officiis hic tenetur
-                  quae quaerat ad velit ab hic
-                  tenetur.
-                </p>
+            <div className="card shadow">
+              <div className="carouselKarticka">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                  alt=""
+                  className="rounded-circle shadow-1-strong mt-3"
+                  width="150"
+                  height="150"
+                />
+                <div className="card-body">
+                  <h5 className="mb-3">Bonnie West</h5>
+                  <h6 className="text-primary mb-3">E-commerce Connoisseur</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quod eos id officiis hic tenetur
+                    quae quaerat ad velit ab hic
+                    tenetur.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-        </Slider>
-      </div>
-
-      <div className="d-flex flex-column">
-        <Testimonials />
-      </div>
+          </Slider>
+        </div>
+      </section>
 
       <div>
         <Footer />
