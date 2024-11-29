@@ -102,7 +102,6 @@
   cursor: pointer; /* Pointer cursor */
 }
 
-
 /* Arrow styling */
 .carousel-control-prev::before,
 .carousel-control-next::before {
@@ -114,9 +113,8 @@
 }
 
 .carousel-control-next svg {
-  transform: rotate(180deg); /* Rotate the arrow to point right */
+  transform: rotate(180deg);
 }
-
 
 /* Positioning for navigation buttons */
 .carousel-control-prev {
