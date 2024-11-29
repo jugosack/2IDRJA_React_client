@@ -18,14 +18,14 @@ const Frontend = () => (
       alt="Frontend course"
     />
     <div className="d-flex flex-column my-5 frame">
-      <h1 className="mt-3 mb-2 ms-5">Front-end development</h1>
+      <h1 className="mt-3 mb-2 ms-5">FrontEnd Courses</h1>
       {/* <div className="box mb-5">
           <div className="lines">
             <div className="overlap-group">
               <div className="rectangle" />
               <div className="rectangle-2" />
             </div>
-          </div>
+          </div>NP
         </div> */}
       <h3 className="mb-5 ms-5">
         Elevate Your Skills with Our Cutting-Edge Front-End Development Course!
