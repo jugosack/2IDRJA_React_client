@@ -13,7 +13,7 @@ const CourseCard = ({
         alt="course"
       />
       <div className="d-flex flex-row p-3 mt-3 rounded justify-content-center align-items-center w-100">
-        <p className="cource-paragraph fs-2">{title}</p>
+        <p className="cource-paragraph fs-3">{title}</p>
       </div>
       <div className="d-flex flex-row  rounded justify-content-center align-items-center w-100">
         <p className="cource-paragraph-date m-0">{duration}</p>

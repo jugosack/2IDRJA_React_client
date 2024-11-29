@@ -38,3 +38,7 @@
 .places-left {
   font-weight: 800;
 }
+
+.fs-2 {
+  font-size: 1.5rem;  /* Adjust if necessary */
+}
