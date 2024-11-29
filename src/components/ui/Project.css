@@ -1,3 +1,144 @@
+.image-container {
+  padding-top: 0;
+
+  /* Ensure no padding by default */
+  position: relative;
+
+  /* Create a positioning context for child elements */
+  display: flex;
+  flex-direction: column;
+
+  /* Stack children vertically */
+}
+
+.image-container button {
+  position: absolute;
+
+  /* Allows the button to be placed anywhere on the image */
+  bottom: 0;
+  left: 50%;
+
+  /* Centers the button horizontally */
+  transform: translate(-50%);
+
+  /* Adjusts positioning to the center */
+  background-color: rgba(18, 33, 95, 0.342);
+
+  /* Button background color */
+  transition: background-color 1.5s;
+  backdrop-filter: blur(5px);
+
+  /* Adds a background blur effect */
+  color: white;
+
+  /* Makes text color white */
+  border: none;
+
+  /* Removes the border */
+  padding: 10px 20px;
+
+  /* Spacing inside the button */
+  cursor: pointer;
+
+  /* Pointer cursor for interactivity */
+  border-radius: 8px;
+
+  /* Rounded corners */
+
+  /* font-weight: bold; */
+
+  /* Makes the text bold */
+  font-family: Verdana, sans-serif;
+
+  /* Sets font to Arial with fallback */
+  font-size: 20px;
+
+  /* Increases font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+
+  /* Black drop shadow for the text */
+
+  width: 100%;
+}
+
+.image-container button:hover {
+  background-color: #24263a;
+
+  /* Darker background on hover */
+
+  /* color: white; /* Text color */
+  transition: background-color 0.3s;
+}
+
+/* For screens exactly 1024px wide */
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .image-container {
+    padding-top: 120px !important;
+  }
+}
+
+/* For small screens, make sure there's no extra padding */
+@media (max-width: 576px) {
+  .image-container {
+    padding-top: 0 !important;
+
+    /* Remove unwanted padding on small screens */
+  }
+
+  .scroll-container {
+    height: 300px;
+
+    /* Adjusted height for small screens */
+  }
+}
+
+.button-container .custom-btn {
+  background-color: lightgray;
+
+  /* Light gray background with !important */
+  border-radius: 8px;
+
+  /* Slightly rounded corners */
+  color: black;
+
+  /* Black text color */
+  transition: background-color 2.1s;
+
+  /* Smooth color transition */
+  padding-left: 16px;
+
+  /* Custom padding */
+  padding-right: 16px;
+
+  /* Custom padding */
+}
+
+.button-container .custom-btn:hover {
+  background-color: #24263a;
+
+  /* Darker gray when hovered */
+  color: white;
+
+  /* White text when hovered */
+  transition: background-color 0.5s;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Allows buttons to wrap onto a new row */
+
+  /* gap: 0.5rem;  */
+}
+
+@media (max-width: 576px) {
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 h1 {
   font-weight: 600;
 }
@@ -74,4 +215,153 @@ h3 {
 
 .img-thumbnail {
   border: none !important;
+}
+
+.scroll-container {
+  overflow: hidden;
+
+  /* height: 520px; */
+  height: 100%;
+  min-height: 500px;
+
+  /* Adjust height to control visible area */
+
+  /* max-width: 900px;  */
+  position: relative;
+  flex: 1;
+}
+
+@media (max-width: 576px) {
+  .scroll-container {
+    height: 300px;
+
+    /* Adjusted height for small screens */
+  }
+}
+
+/* Scrolling effect for the image */
+.scroll-image {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  animation: scrollUp 37s linear infinite;
+
+  /* Adjust the duration to control speed */
+}
+
+.scroll-image2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  animation: scrollUp 45s linear infinite;
+
+  /* Adjust the duration to control speed */
+}
+
+.scroll-image3 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  animation: scrollUp 18s linear infinite;
+
+  /* Adjust the duration to control speed */
+}
+
+/* Animation for scrolling */
+@keyframes scrollUp {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+
+    /* Scroll up by half the container's height to loop */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Make images full-width on tablets */
+  .scroll-container img {
+    width: 100%;
+  }
+}
+
+/* Apply full width to the images in tablet view and make them unselectable */
+.col-12 .scroll-container {
+  overflow: hidden;
+  height: 520px;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .col-12 .scroll-container {
+    height: 300px;
+
+    /* Adjusted height for small screens */
+  }
+}
+
+.scroll-image img {
+  width: 100%;
+  pointer-events: none;
+
+  /* Prevent image selection */
+  user-select: none;
+
+  /* Prevent text/image selection */
+}
+
+/* Unselectable class to prevent selection */
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.divider-xs {
+  display: none;
+
+  /* Hidden by default */
+  width: 80%;
+
+  /* Adjust width as needed */
+  height: 1px;
+
+  /* Slightly thicker line */
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      #888,
+      rgba(0, 0, 0, 0)
+    );
+
+  /* Gradient fades at edges */
+  border-radius: 5px;
+
+  /* Rounded edges for a softer look */
+  margin: 10px auto 5px auto;
+
+  /* Center with space above and below */
+}
+
+@media (max-width: 991px) {
+  .divider-xs {
+    display: block;
+
+    /* Show only on xs screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .course-card-wrapper {
+    flex-basis: 100%;
+
+    /* Display one card per row on even smaller screens */
+  }
 }
