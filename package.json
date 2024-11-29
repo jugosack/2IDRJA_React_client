@@ -40,10 +40,11 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.23.6",
+    "@babel/core": "^7.26.0",
     "@babel/eslint-parser": "^7.23.3",
     "@babel/plugin-syntax-jsx": "^7.23.3",
-    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
     "css-loader": "^7.1.2",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",

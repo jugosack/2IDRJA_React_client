@@ -4,46 +4,155 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
-
-  /* width: 100vw; */
 }
 
+/* Smooth scrolling for all elements */
 * {
   scroll-behavior: smooth;
 }
 
 .card-parent {
   height: 42em;
-
-  /* width: 22em; */
 }
 
-/* @media (max-width: 1000px) {
-  {
-    flex-direction: column;
-  }
-} */
-
+/* Container for course cards */
 .course-list-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* Individual course card styles */
 .course-card-wrapper {
-  flex: 1 1 300px; /* Adjust the width of each card as needed */
-  margin: 10px; /* Adjust margin between cards */
+  flex: 0 0 30%; /* Consistent width (30% of the container) */
+  max-width: 30%; /* Prevent overflow */
+  height: 350px; /* Consistent height */
+  text-align: center; /* Center-align content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Spacing inside the card */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; /* Consistent background color */
+  overflow: hidden; /* Prevent overflowing content */
+  margin: 10px; /* Uniform spacing between cards */
+  transition: transform 0.3s ease; /* Add hover effect */
 }
 
-/* Media query for responsiveness */
+.course-card-wrapper:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Style for course card content */
+.course-card-wrapper h3,
+.course-card-wrapper p {
+  margin: 0 auto; /* Center text within the card */
+  text-align: center; /* Ensure text alignment is centered */
+}
+
+.course-card-wrapper h3 {
+  font-size: 1.5rem; /* Set consistent title size */
+  margin-bottom: 10px; /* Spacing between title and content */
+}
+
+.course-card-wrapper p {
+  font-size: 1rem; /* Set consistent font size for text */
+}
+
+/* Styling for images inside course cards */
+.course-card-wrapper img {
+  width: 100%; /* Ensure the image takes up the full card width */
+  height: 100%;
+  object-fit: cover; /* Fit the image without cropping */
+}
+
+/* Center the carousel on the page */
+.carousel-container {
+  display: flex;
+  align-items: center; /* Align content vertically */
+  justify-content: center; /* Align content horizontally */
+  position: relative;
+  height: auto; /* Adjust height as needed */
+  padding: 20px 0; /* Optional padding */
+}
+
+/* Wrapper for visible cards */
+.carousel-wrapper {
+  display: flex;
+  gap: 20px; /* Spacing between cards */
+  overflow: hidden; /* Hide overflowing cards */
+  width: 70%; /* Limit visible width to show 3 cards */
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+/* Buttons for carousel navigation */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; /* Adjust circle size */
+  height: 50px; /* Adjust circle size */
+  background: rgba(200, 200, 200, 0.8); /* Light gray background */
+  border: none; /* Remove borders */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Perfect centering */
+  z-index: 10; /* Bring to front */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Arrow styling */
+.carousel-control-prev::before,
+.carousel-control-next::before {
+  content: ""; /* Empty content to create triangle */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  display: block;
+}
+
+.carousel-control-next svg {
+  transform: rotate(180deg);
+}
+
+/* Positioning for navigation buttons */
+.carousel-control-prev {
+  left: 20px;
+  margin-top: 330px;
+}
+
+.carousel-control-next {
+  right: 20px;
+  margin-top: 330px;
+}
+
+/* Responsive Styling */
 @media (max-width: 768px) {
+  /* Disable carousel on small screens */
+  .carousel-wrapper {
+    display: block; /* Stack cards vertically */
+    width: 100%; /* Full width for cards */
+    overflow: visible; /* Allow all content to be visible */
+  }
+
   .course-card-wrapper {
-    flex-basis: calc(50% - 20px); /* Display two cards per row on smaller screens */
+    flex: 0 0 100%; /* Full width for each card */
+    max-width: 100%;
+    margin-bottom: 20px; /* Add spacing between cards */
+  }
+
+  /* Hide carousel controls on small screens */
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
   }
 }
 
-@media (max-width: 480px) {
-  .course-card-wrapper {
-    flex-basis: 100%; /* Display one card per row on even smaller screens */
+@media (min-width: 769px) {
+  .carousel-wrapper {
+    display: flex; /* Restore carousel for larger screens */
+    gap: 20px;
+    width: 70%;
   }
 }
