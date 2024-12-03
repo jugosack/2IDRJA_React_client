@@ -12,68 +12,72 @@ import CourseCard from './ui/CourseCard';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-function CustomNextArrow({ className, style, onClick }) {
-  return (
-    <button
-      type="button"
-      className={`${className} custom-arrow`}
-      style={{
-        ...style,
-        borderRadius: '50%',
-        width: '14px',
-        height: '14px',
-        display: 'block',
-        alignItems: 'center',
-        justifyContent: 'center',
-        right: '-5px',
-        zIndex: 1,
-        border: 'none',
-      }}
-      onClick={onClick}
-      aria-label="Next slide"
+// Custom Next Arrow
+const CustomNextArrow = ({ className, onClick }) => (
+  <div
+    className={`${className} custom-next-arrow`}
+    onClick={onClick}
+    role="button"
+    tabIndex={0}
+    onKeyDown={(e) => {
+      if (e.key === 'Enter' || e.key === ' ') onClick();
+    }}
+  >
+    <img
+      src="/images/chevron-right.svg"
+      alt="Next"
     />
-  );
-}
+  </div>
+);
 
 CustomNextArrow.propTypes = {
   className: PropTypes.string,
-  style: PropTypes.shape({}), // Use shape or exact for stricter validation
-  onClick: PropTypes.func,
+  onClick: PropTypes.func.isRequired,
 };
 
 CustomNextArrow.defaultProps = {
   className: '',
-  style: { backgroundColor: 'black' },
-  onClick: undefined,
 };
 
-function CustomPrevArrow({ className, style, onClick }) {
-  return (
-    <button
-      type="button"
-      className={`${className} custom-arrow`}
-      style={{
-        ...style,
-        left: '-10px',
-        zIndex: 1,
-        border: 'none',
-      }}
-      onClick={onClick}
-      aria-label="Previous slide"
+const SamplePrevArrow = ({ className, style, onClick }) => (
+  <div
+    className={`${className} custom-prev-arrow`}
+    style={{
+      ...style,
+      borderRadius: '50%',
+      width: '14px',
+      height: '14px',
+      // display: 'block',
+      alignItems: 'center',
+      justifyContent: 'center',
+      // right: '-20px',
+      zIndex: 1,
+      border: 'none',
+    }}
+    onClick={onClick}
+    role="button"
+    tabIndex={0}
+    onKeyDown={(e) => {
+      if (e.key === 'Enter' || e.key === ' ') onClick();
+    }}
+  >
+    <img
+      src="/images/chevron-left (1).svg"
+      alt="Previous"
     />
-  );
-}
+  </div>
+);
 
-CustomPrevArrow.propTypes = {
+// PropTypes validation
+SamplePrevArrow.propTypes = {
   className: PropTypes.string,
-  style: PropTypes.shape({}), // Use shape or exact for stricter validation
-  onClick: PropTypes.func,
+  style: PropTypes.shape({}),
+  onClick: PropTypes.func.isRequired,
 };
 
-CustomPrevArrow.defaultProps = {
+SamplePrevArrow.defaultProps = {
   className: '',
-  style: {},
-  onClick: undefined,
+  style: { backgroundColor: 'black' },
 };
 
 function Home() {
@@ -100,10 +104,10 @@ function Home() {
     autoplaySpeed: 5000,
     pauseOnHover: true,
     nextArrow: <CustomNextArrow />,
-    prevArrow: <CustomPrevArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 1025,
+        breakpoint: 1395,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -119,6 +123,7 @@ function Home() {
       },
     ],
   };
+
   return (
     <>
       <div className="background w-100">
@@ -230,7 +235,7 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="slider-container my-4">
+        <div className="slider-container">
           {/*eslint-disable*/}
           <Slider {...settings}>
             {/* eslint-enable */}
