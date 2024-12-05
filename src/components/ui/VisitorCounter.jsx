@@ -27,7 +27,7 @@ const VisitorCounter = () => {
   return (
     <section
       ref={ref}
-      className="CounterSection p-3 bg-primary d-flex justify-content-center align-items-center"
+      className="CounterSection p-3 d-flex justify-content-center align-items-center"
     >
       <div className="row text-center w-100">
         <div className="col-12 col-xl-4 col-md-3">

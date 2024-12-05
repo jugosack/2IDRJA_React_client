@@ -1,20 +1,23 @@
 
-.visits{
-
-color: white;
-font-size: 24px;
+.visits {
+  color: white;
+  font-size: 24px;
 }
+
 .text-box {
-    margin: 10px;
-    min-width: 300px;
-    display: inline-block; /* Ensures the box fits the text content */
-    padding: 10px 20px; /* Adds space inside the box */
-    border: 6px solid white; /* Defines the border thickness and color */
-    border-radius: 25px; /* Rounds the corners */
-    /* color: black;  */
-    /* background-color: white; */
-  }
-  
-  .CounterSection{
-    min-height: 300px;
-  }
+  margin: 10px;
+  min-width: 300px;
+  display: inline-block; /* Ensures the box fits the text content */
+  padding: 10px 20px; /* Adds space inside the box */
+  border: 6px solid white; /* Defines the border thickness and color */
+  border-radius: 25px; /* Rounds the corners */
+
+  /* color: black;  */
+
+  /* background-color: white; */
+}
+
+.CounterSection {
+  background-color: rgba(11, 16, 41, 0.816);
+  min-height: 300px;
+}
