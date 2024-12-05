@@ -11,6 +11,7 @@ import Footer from './ui/Footer';
 import CourseCard from './ui/CourseCard';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import VisitorCounter from './ui/VisitorCounter';
 
 // Custom Next Arrow
 const CustomNextArrow = ({ className, onClick }) => (
@@ -223,6 +224,8 @@ function Home() {
           </svg>
         </button>
       </div>
+
+      <VisitorCounter />
 
       <section className="p-3 bg-primary bg-opacity-10 ">
         <div className="row d-flex justify-content-center">
