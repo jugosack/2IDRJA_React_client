@@ -33,10 +33,10 @@ const About = () => (
         </h1>
         <div>
           <p className="paragraph ps-5 pe-5 pt-5 paragraph-justified lh-lg">
-            Welcome to [Platform Name] – Where Innovation Meets Expertise in Programming Education Since 2004!
-            At [Platform Name], we have been at the forefront of empowering aspiring developers and designers
+            Welcome to 2IDRJA – Where Innovation Meets Expertise in Programming Education Since 2004!
+            At 2IDRJA, we have been at the forefront of empowering aspiring developers and designers
             to unleash their full potential in the dynamic world of programming and web development. Established
-            in 2004, our commitment to excellence has driven us to continually evolve and offer cutting-edge
+            in 2021, our commitment to excellence has driven us to continually evolve and offer cutting-edge
             courses that reflect the latest industry trends.
 
             Our comprehensive programming curriculum encompasses a range of courses designed to equip you with
@@ -58,21 +58,21 @@ const About = () => (
         <div className="boxes d-flex flex-column mx-3 rounded bg-gray-200 p-3 shadow-lg">
           <div className="inside--boxes d-flex flex-row justify-content-around">
             <div className="box d-flex flex-column p-3 m-3 rounded bg-gray-100 w-100 shadow">
-              <h1>100+</h1>
+              <h1>90+</h1>
               <p>Satisfied students</p>
             </div>
             <div className="box d-flex flex-column p-3 m-3 rounded bg-gray-100 w-100 shadow">
-              <h1>12</h1>
+              <h1>4</h1>
               <p>Projects completed</p>
             </div>
           </div>
           <div className="inside--boxes d-flex flex-row justify-content-around">
             <div className="box d-flex flex-column p-3 m-3 rounded bg-gray-100 w-100 shadow">
-              <h1>9+</h1>
+              <h1>3+</h1>
               <p>years of experience</p>
             </div>
             <div className="box d-flex flex-column p-3 m-3 rounded bg-gray-100 w-100 shadow">
-              <h1>50</h1>
+              <h1>6</h1>
               <p>Successful courses</p>
             </div>
           </div>
@@ -86,22 +86,20 @@ const About = () => (
       <ul className="ps-5 ms-5">
         <li>
           <p className="paragraph ps-5 pe-5 pt-2">
-            &quot;CodeCraft Pro&quot; - A Front-End Development Project: Students demonstrate their mastery
+            &quot;2IDRJA Pro&quot; - A Front-End Development Project: Students demonstrate their mastery
             of HTML, CSS, and JavaScript by crafting a responsive and visually engaging website.
           </p>
         </li>
         <li>
           <p className="paragraph ps-5 pe-5 pt-2">
-            &quot;ReactRise&quot; - Mastering React.js: This project showcases the application of React.js
-            in building a dynamic and interactive web application, highlighting the power and
-            versatility of this cutting-edge technology.
+            &quot;Asprovaltam &quot; - Website where you can book you holiday or summer days.
+            Made with Html,React,Node,CSS,Bootstrap.
           </p>
         </li>
         <li>
           <p className="paragraph ps-5 pe-5 pt-2">
-            &quot;PixelPerfect Designs&quot; - UI/UX Design Showcase: Students unveil their creativity and
-            user-centric design skills with a series of captivating UI/UX projects, crafted using
-            industry-standard tools such as Figma.
+            &quot;FakeShop&quot; - In this shop you can find any clothes you want.
+            Made with Html,React,Node,CSS,Bootstrap.
           </p>
         </li>
         <li>
@@ -113,7 +111,7 @@ const About = () => (
         </li>
         <li>
           <p className="paragraph ps-5 pe-5 pt-5">
-            At [Platform Name], our mission is to foster a collaborative learning environment
+            At 2IDRJA, our mission is to foster a collaborative learning environment
             where passion meets expertise. Join us on this educational journey, where each course
             is a step toward realizing your programming aspirations. Enroll today, and let&apos;s code
             the future together!
