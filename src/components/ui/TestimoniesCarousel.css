@@ -1,4 +1,8 @@
 
+.SectionT {
+  background-color: rgb(235, 235, 240);
+}
+
 .Karousel {
   max-width: 300px;
 
@@ -17,19 +21,19 @@
 
 .custom-prev-arrow img {
   position: relative;
-  right: 5px;
+  right: -5px;
 }
 
 .custom-next-arrow img {
   /* display: none; */
   position: relative;
-  right: -5px;
+  right: -15px;
 }
 
 .custom-prev-arrow img,
 .custom-next-arrow img {
-  width: 35px;
-  height: 35px;
+  width: 16px;
+  height: 16px;
 }
 
 .slick-next {

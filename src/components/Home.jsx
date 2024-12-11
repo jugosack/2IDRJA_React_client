@@ -32,9 +32,6 @@ function Home() {
       <div className="d-flex flex-column">
 
         <OurCoreBeliefs />
-        <VisitorCounter />
-        <OurMisiion />
-        <WhatWeDo />
 
       </div>
       <div className="carousel-container p-5">
@@ -127,6 +124,10 @@ function Home() {
           </svg>
         </button>
       </div>
+
+      <VisitorCounter />
+      <OurMisiion />
+      <WhatWeDo />
 
       <TestimoniesCarousel />
       <Footer />

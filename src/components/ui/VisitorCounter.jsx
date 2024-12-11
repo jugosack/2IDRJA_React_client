@@ -27,41 +27,49 @@ const VisitorCounter = () => {
   return (
     <section
       ref={ref}
-      className="CounterSection p-3 d-flex justify-content-center align-items-center"
+      className="CounterSection"
     >
-      <div className="row text-center w-100">
-        <div className="col-12 col-xl-4 col-md-3">
-          <div className="text-box">
-            <p className="visits">
-              This page was visited
-              <br />
-              {inView ? <CountUp end={visitCount} duration={5} /> : 0}
-              &nbsp;times
-            </p>
-          </div>
-        </div>
-
-        <div className="col-12 col-xl-4 col-md-3">
-          <div className="text-box">
-            <p className="visits">
-              Courses
-              <br />
-              {inView ? <CountUp end={5} duration={9} /> : 0}
-            </p>
-          </div>
-        </div>
-
-        <div className="col-12 col-xl-4 col-md-3">
-          <div className="text-box">
-            <p className="visits">
-              Students
-              <br />
-              {inView ? <CountUp end={1230} duration={5} /> : 0}
-              +
-            </p>
-          </div>
+      <div className="DiscoverUs">
+        <h2 className="DiscoverTitle">
+          DISCOVER US
+        </h2>
+        <div className="DiscoverLine">
+          <div className="circle" />
+          <hr />
+          <div className="circle" />
         </div>
       </div>
+
+      <div className="flex-grid">
+        <div className="grid-item">
+          <div className="LargeCircle">
+            {inView ? <CountUp end={2} duration={10} /> : 0}
+          </div>
+          Coding Projects
+        </div>
+
+        <div className="grid-item">
+          <div className="LargeCircle">
+            {inView ? <CountUp end={7} duration={9} /> : 0}
+          </div>
+          Courses
+        </div>
+
+        <div className="grid-item">
+          <div className="LargeCircle">
+            {inView ? <CountUp end={visitCount} duration={5} /> : 0}
+          </div>
+          Visitors
+        </div>
+        <div className="grid-item">
+          <div className="LargeCircle">
+            {inView ? <CountUp end={90} duration={5} /> : 0}
+            +
+          </div>
+          Students
+        </div>
+      </div>
+
     </section>
   );
 };

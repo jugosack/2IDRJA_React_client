@@ -108,7 +108,8 @@ const TestimoniesCarousel = () => {
   };
 
   return (
-    <section className="p-3 bg-primary bg-opacity-10 ">
+    <section className="SectionT p-3">
+      {/* bg-primary bg-opacity-10 */}
       <div className="row d-flex justify-content-center">
         <div className="col-md-10 col-xl-8 text-center">
           <h3 className="d-flex justify-content-center mt-2 mb-4">Testimonials</h3>

@@ -1,12 +1,18 @@
 
 .visits {
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack the circle above the text */
+  justify-content: center; /* Center items horizontally */
   color: white;
   font-size: 24px;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
 }
 
 .text-box {
   margin: 10px;
-  min-width: 300px;
+  min-width: 230px;
+  min-height: 150px;
   display: inline-block; /* Ensures the box fits the text content */
   padding: 10px 20px; /* Adds space inside the box */
   border: 6px solid white; /* Defines the border thickness and color */
@@ -18,6 +24,108 @@
 }
 
 .CounterSection {
-  background-color: rgba(11, 16, 41, 0.816);
-  min-height: 300px;
+  /* background-color: rgba(11, 16, 41, 0.816); */
+
+  /* background-color: rgb(230, 230, 230); */
+  background-color: rgb(235, 235, 240);
+  min-height: 448px;
+  padding-top: 6rem;
+}
+
+.DiscoverTitle {
+  text-align: center;
+  padding-bottom: 0.8rem;
+}
+
+.DiscoverLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 87%;
+  max-width: 1200px;
+  margin: 5px auto;
+}
+
+.DiscoverLine hr {
+  opacity: 1;
+  flex: 1;
+  border: 0;
+  border-top: 0.1rem solid #24263a;
+  margin: 0 auto;
+}
+
+.DiscoverLine .circle {
+  width: 0.4rem !important;
+  height: 0.4rem !important;
+  background-color: #24263a;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.flex-grid {
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto a new row if there's no space */
+  gap: 3rem; /* Optional: Adds spacing between items */
+}
+
+.grid-item {
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack the circle above the text */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  flex: 0 0 auto;
+  width: 200px; /* Fixed width */
+  height: 250px; /* Fixed height */
+  box-sizing: border-box; /* Ensures padding/border do not affect width */
+  padding: 10px; /* Optional: Adds inner spacing */
+
+  /* border: 1px solid #ccc; */
+  text-align: center; /* Optional: Center text within the grid item */
+  font: bold 18px 'Noto Sans', sans-serif;
+}
+
+.LargeCircle {
+  font: bold 34px 'Noto Sans', sans-serif;
+  display: flex; /* Use Flexbox for alignment */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  text-align: center; /* Optional: For multi-line text alignment */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid black;
+  background-color: rgb(255, 255, 255);
+  line-height: normal; /* Ensure normal line height */
+  margin-bottom: 16px; /* Space between circle and text */
+}
+
+@media (min-width: 1435px) {
+  .flex-grid {
+    gap: 7rem;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1024px) {
+  .flex-grid {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .flex-grid {
+    gap: 0;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 770px) {
+  .flex-grid {
+    gap: 0;
+  }
+
+  .grid-item {
+    width: 180px; /* Fixed width */
+    height: 200px; /* Fixed height */
+  }
 }
