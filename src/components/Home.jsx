@@ -11,6 +11,7 @@ import VisitorCounter from './ui/VisitorCounter';
 import TestimoniesCarousel from './ui/TestimoniesCarousel';
 import WhatWeDo from './ui/WhatWeDo';
 import OurCoreBeliefs from './ui/OurCoreBeliefs';
+import { ReactComponent as ArrowSVGL } from './icons/small-arrow-prev-small-svgrepo-com.svg';
 
 function Home() {
   const carouselRef = useRef(null);
@@ -42,16 +43,8 @@ function Home() {
           onClick={scrollPrev}
           aria-label="Previous slide"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path
-              d="M15 6l-6 6 6 6"
-              fill="none"
-              stroke="#333"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          <ArrowSVGL className="svgCarouselArrowCourse" />
+
         </button>
 
         <div className="carousel-wrapper" ref={carouselRef}>
@@ -112,16 +105,8 @@ function Home() {
           onClick={scrollNext}
           aria-label="Next slide"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path
-              d="M15 6l-6 6 6 6"
-              fill="none"
-              stroke="#333"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          <ArrowSVGL className="svgCarouselArrowCourse" />
+
         </button>
       </div>
 
