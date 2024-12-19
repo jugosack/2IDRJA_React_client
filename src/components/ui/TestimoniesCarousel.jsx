@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { ReactComponent as ArrowSVGL } from '../icons/small-arrow-prev-small-svgrepo-com.svg';
+import { ReactComponent as ArrowSVGR } from '../icons/small-arrow-next-small-svgrepo-com.svg';
 
 const TestimoniesCarousel = () => {
   // Custom Next Arrow
@@ -17,10 +19,13 @@ const TestimoniesCarousel = () => {
         if (e.key === 'Enter' || e.key === ' ') onClick();
       }}
     >
-      <img
-        src="/images/chevron-right.svg"
+      <ArrowSVGR className="svgCarouselArrow" />
+
+      {/* <img
+        className="svgCarouselArrow"
+        src="/images/BoldBg-arrow-circle-right-svgrepo-com.svg"
         alt="Next"
-      />
+      /> */}
     </div>
   );
 
@@ -55,10 +60,12 @@ const TestimoniesCarousel = () => {
         if (e.key === 'Enter' || e.key === ' ') onClick();
       }}
     >
-      <img
-        src="/images/chevron-left (1).svg"
+      <ArrowSVGL className="svgCarouselArrow" />
+
+      {/* <img
+        src="/images/BoldBg-arrow-circle-left-svgrepo-com.svg"
         alt="Previous"
-      />
+      /> */}
     </div>
   );
 

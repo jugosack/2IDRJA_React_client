@@ -19,21 +19,34 @@
   padding: 20px 0; /* Optional padding */
 }
 
-.custom-prev-arrow img {
+.custom-prev-arrow svg {
+  position: relative;
+  right: 0;
+}
+
+.custom-next-arrow svg {
+  /* display: none; */
   position: relative;
   right: -5px;
 }
 
-.custom-next-arrow img {
-  /* display: none; */
-  position: relative;
-  right: -15px;
+.custom-prev-arrow svg,
+.custom-next-arrow svg {
+  width: 30px;
+  height: 30px;
 }
 
-.custom-prev-arrow img,
-.custom-next-arrow img {
-  width: 16px;
-  height: 16px;
+.svgCarouselArrow {
+  fill: rgb(140, 140, 140);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.svgCarouselArrow:hover {
+  /* fill: rgb(42, 42, 42);  */
+
+  /* Change color on hover */
+  fill: rgb(85, 85, 85);
 }
 
 .slick-next {
