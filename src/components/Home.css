@@ -122,19 +122,21 @@
   display: block;
 } */
 
-.svgCarouselArrowCourse{
+.svgCarouselArrowCourse {
   width: 30px;
   height: 30px;
-  fill:white; 
+  fill: white;
   background-color: rgb(140, 140, 140);
   border-radius: 50%;
 }
+
 .svgCarouselArrowCourse:hover {
   /* fill: rgb(42, 42, 42);  */
-  /* Change color on hover */
-  fill-color: rgb(85, 85, 85);
 
+  /* Change color on hover */
+  fill: rgb(85, 85, 85);
 }
+
 .carousel-control-next svg {
   transform: rotate(180deg);
 }
