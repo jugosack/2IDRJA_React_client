@@ -29,7 +29,13 @@
   /* background-color: rgb(230, 230, 230); */
   background-color: rgb(235, 235, 240);
   min-height: 448px;
-  padding-top: 6rem;
+  padding-top: 64px;
+}
+
+@media (min-width: 767px) {
+  .CounterSection {
+    padding-top: 96px;
+  }
 }
 
 .DiscoverTitle {
@@ -86,6 +92,20 @@
   font: bold 18px 'Noto Sans', sans-serif;
 }
 
+@media (max-width: 769px) {
+  .grid-item {
+    width: 180px; /* Fixed width */
+    height: 200px; /* Fixed height */
+  }
+}
+
+@media (max-width: 321px) {
+  .grid-item {
+    width: 160px; /* Fixed width */
+    height: 200px; /* Fixed height */
+  }
+}
+
 .LargeCircle {
   font: bold 34px 'Noto Sans', sans-serif;
   display: flex; /* Use Flexbox for alignment */
@@ -98,7 +118,7 @@
   border: 4px solid black;
   background-color: rgb(255, 255, 255);
   line-height: normal; /* Ensure normal line height */
-  margin-bottom: 16px; /* Space between circle and text */
+  margin-bottom: 12px; /* Space between circle and text */
 }
 
 @media (min-width: 1435px) {
@@ -122,10 +142,5 @@
 @media (min-width: 765px) and (max-width: 770px) {
   .flex-grid {
     gap: 0;
-  }
-
-  .grid-item {
-    width: 180px; /* Fixed width */
-    height: 200px; /* Fixed height */
   }
 }

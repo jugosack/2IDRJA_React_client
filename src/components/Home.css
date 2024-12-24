@@ -3,10 +3,26 @@
   background-image: url('/public/images/BGImage2.jpg');
   z-index: 1;
   background-size: cover;
-  background-position: center;
+  background-position: 53% center;
   height: 100vh;
 }
 
+@media screen and (max-width: 426px) {
+  .background {
+    background-image: url('/public/images/BGImage2.jpg');
+    z-index: 1;
+    background-size: cover;
+    background-position: -510px center;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .background {
+    background-position: 76% center;
+
+  }
+}
 /* Smooth scrolling for all elements */
 * {
   scroll-behavior: smooth;

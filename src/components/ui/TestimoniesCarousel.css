@@ -79,6 +79,12 @@
   box-sizing: border-box; /* Prevents padding from increasing card width */
 }
 
+@media (max-width: 769px) {
+  .slick-slide .card {
+    padding-left: 0;
+  }
+}
+
 .carouselKarticka .card-img {
   flex-shrink: 0;
   width: 150px;
