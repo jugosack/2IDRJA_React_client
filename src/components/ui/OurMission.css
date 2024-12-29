@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@4000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
-.What-we-do-text{
+.What-we-do-text {
   margin-bottom: 40px;
 }
+
 .toggle-text-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  /*margin-top: 15px; /* Add some spacing from the text above */
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.text-container {
+  position: relative;
 }
 
 .text-truncated-mobile {
@@ -16,20 +21,16 @@
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 4; /* Limit to 4 lines */
-  -webkit-box-orient: vertical;
   line-clamp: 4; /* Standard property for compatibility */
-  white-space: normal; /* Prevent nowrap behavior */
-  word-wrap: break-word; /* Ensure text wraps correctly */
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .toggle-text {
-  display: inline-block;
-  /* color: #007bff; */
-  font-weight: bold;
   cursor: pointer;
-  /* margin-top: 10px; */
+  font-weight: bold;
 }
-
 
 .text-truncated {
   overflow: hidden;
@@ -51,9 +52,15 @@
 }
 
 .toggle-text-inline {
-  display: inline;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   font-weight: bold;
   cursor: pointer;
+  color: black; /* Example color */
+  background: #fafafa; /* Match background to avoid overlap issues */
+  padding-left: 5px; /* Add small space before the button */
+  display: inline;
 }
 
 .toggle-text-inline:hover {
@@ -63,6 +70,16 @@
 .paragraph {
   max-width: 100%;
   word-wrap: break-word; /* Prevents breaking issues */
+}
+
+#see-more-overlap-our-core-beliefs {
+  background: #ebebf0;
+}
+
+@media (min-width: 765px) and (max-width: 770px) {
+  #see-more-overlap {
+    margin-right: 345px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -77,7 +94,6 @@
     display: none; /* Hide toggle on larger screens */
   }
 }
-
 
 @media (min-width: 769px) {
   .toggle-text {
@@ -122,14 +138,6 @@
     line-clamp: 4; /* Standard property for compatibility */
     -webkit-box-orient: vertical;
   }
-}
-
-/* Inline toggle text styles */
-.toggle-text {
-  cursor: pointer;
-
-  /* color: #007bff; */
-  font-weight: bold;
 }
 
 .see-more-btn {

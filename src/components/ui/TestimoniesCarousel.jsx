@@ -90,7 +90,7 @@ const TestimoniesCarousel = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     swipeToSlide: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
     nextArrow: <CustomNextArrow />,

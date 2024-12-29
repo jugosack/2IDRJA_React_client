@@ -66,6 +66,11 @@
   bottom: -24px !important;
 }
 
+.slick-list {
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+}
+
 .slick-slide .card {
   border: none; /* Removes the border from the card element inside the slick slide */
   box-shadow: 5px 5px;
@@ -93,7 +98,7 @@
   margin-bottom: 1rem; /* Add spacing below the image */
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1941px) {
   .carouselKarticka {
     flex-direction: column;
   }
