@@ -121,3 +121,9 @@
     padding: 0;
   }
 }
+
+@media (max-width: 350px) {
+  .textContentDescription {
+    padding-top: 20px;
+  }
+}

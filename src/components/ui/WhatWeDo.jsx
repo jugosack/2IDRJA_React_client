@@ -15,15 +15,15 @@ const WhatWeDo = () => {
           <h1 className="mt-3 mb-2 ms-5 ps-lg-5">WHAT WE DO</h1>
           <div className="box mb-5" />
           <div className="ps-lg-5">
-            <p className="fw-bold fs-5 text-start ps-5 pb-3 pe-3 pe-md-0">
-              &quot;Unleashing Innovation, Igniting Change: Where
+            <p className="fw-bold fs-5 text-start ps-5 pb-3 pe-4 pe-md-0">
+              &quot;Unleashing Innovation, Igniting Change:
               <br />
-              Boundless Research Shapes a Limitless Future!&quot;
+              Where Boundless Research Shapes a Limitless Future!&quot;
             </p>
           </div>
         </div>
         <div className="What-we-do-text">
-          <div className="d-flex flex-row flex-lg-column ps-5 pe-5 pb-3 paragraph lh-lg paragraph-justified">
+          <div className="d-flex flex-row flex-lg-column ps-5 pe-4 pb-3 paragraph lh-lg paragraph-justified">
             <div className="text-container">
               <div
                 className={`paragraph-content ${
@@ -44,6 +44,7 @@ const WhatWeDo = () => {
               </div>
               {!isExpanded && (
                 <span
+                  id="see-more-what-we-do"
                   className="toggle-text-inline"
                   role="button"
                   tabIndex="0"

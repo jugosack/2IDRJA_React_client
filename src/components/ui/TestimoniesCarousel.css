@@ -169,3 +169,56 @@
 .slider-container .slick-slide {
   padding: 0 15px; /* Adds more space between each slide */
 }
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+}
+
+/* adjustments for mobile S 320px screen testimonies carousel */
+@media (max-width: 321px) {
+  /* changes card width using margins */
+  .slick-list {
+    margin-right: -10px !important;
+    margin-left: -10px !important;
+  }
+
+  .custom-next-arrow svg {
+    /* display: none; */
+    position: relative;
+    right: -10px;
+  }
+
+  .custom-prev-arrow svg {
+    position: relative;
+    right: 5px;
+  }
+
+  .card-body {
+    min-height: 250px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+/* adjustments for mobile M 375px screen testimonies carousel */
+@media (min-width: 322px) and (max-width: 376px) {
+  .slick-list {
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+  }
+}
+
+/* adjustments for mobile L 425px screen testimonies carousel */
+@media (min-width: 420px) and (max-width: 428px) {
+  .custom-next-arrow svg {
+    /* display: none; */
+    position: relative;
+    right: 5px;
+  }
+
+  .custom-prev-arrow svg {
+    position: relative;
+    right: -10px;
+  }
+}

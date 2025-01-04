@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 87%;
+  width: 85%;
   max-width: 1200px;
   margin: 5px auto;
 }
@@ -79,7 +79,7 @@
 .grid-item {
   display: flex; /* Enable Flexbox */
   flex-direction: column; /* Stack the circle above the text */
-  justify-content: center; /* Center items horizontally */
+  justify-content: start; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   flex: 0 0 auto;
   width: 200px; /* Fixed width */
@@ -95,13 +95,6 @@
 @media (max-width: 769px) {
   .grid-item {
     width: 180px; /* Fixed width */
-    height: 200px; /* Fixed height */
-  }
-}
-
-@media (max-width: 321px) {
-  .grid-item {
-    width: 160px; /* Fixed width */
     height: 200px; /* Fixed height */
   }
 }
@@ -143,4 +136,23 @@
   .flex-grid {
     gap: 0;
   }
+}
+
+/* discover/counter Circles on mobile S screen */
+@media (max-width: 325px) {
+  .grid-item {
+    width: 130px; /* Fixed width */
+    height: 190px; /* Fixed height */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .LargeCircle {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* .flex-grid {
+    gap: 0.2rem;
+  } */
 }

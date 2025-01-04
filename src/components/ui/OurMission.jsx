@@ -67,7 +67,7 @@ const OurMisiion = () => {
         </div>
         )}
 
-        <div className="d-flex flex-row flex-lg-col col-lg-6 p-3 pe-5 ">
+        <div className="d-flex flex-row flex-lg-col col-lg-6 p-3 pe-lg-5 ">
           <img className="img-fluid" src={projectimg} alt="us" />
         </div>
       </div>

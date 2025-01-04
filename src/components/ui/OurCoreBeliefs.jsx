@@ -31,7 +31,7 @@ const OurCoreBeliefs = () => {
               <div className="text-container">
 
                 <div
-                  className={`ps-4 paragraph lh-lg pt-4 paragraph-justified ${
+                  className={`px-4 paragraph lh-lg pt-4 paragraph-justified ${
                     isExpanded ? '' : 'text-truncated-mobile'
                   }`}
                 >
