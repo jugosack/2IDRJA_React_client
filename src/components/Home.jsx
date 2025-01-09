@@ -17,11 +17,11 @@ function Home() {
   const carouselRef = useRef(null);
 
   const scrollNext = () => {
-    carouselRef.current.scrollBy({ left: 350, behavior: 'smooth' }); // Adjust scroll distance if needed
+    carouselRef.current.scrollBy({ left: 280, behavior: 'smooth' }); // Adjust scroll distance if needed
   };
 
   const scrollPrev = () => {
-    carouselRef.current.scrollBy({ left: -350, behavior: 'smooth' }); // Adjust scroll distance if needed
+    carouselRef.current.scrollBy({ left: -290, behavior: 'smooth' }); // Adjust scroll distance if needed
   };
 
   return (
