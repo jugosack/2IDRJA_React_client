@@ -1,11 +1,15 @@
 .course-image {
-  max-width: 290px;
+  max-width: 250px;
+}
+
+.bg-silver {
+  background-color: rgb(235, 235, 240);
 }
 
 .c-card {
   opacity: 0.9;
-
-  /* border: 1px solid rgba(75, 102, 117, 1) !important; */
+  margin-left: 1.2% !important;
+  margin-right: 1.2% !important;
 }
 
 .c-card:hover {

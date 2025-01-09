@@ -1,26 +1,9 @@
-
 .background {
   background-image: url('/public/images/BGImage2.jpg');
   z-index: 1;
   background-size: cover;
-  background-position: 53% center;
+  background-position: center;
   height: 100vh;
-}
-
-@media screen and (max-width: 426px) {
-  .background {
-    background-image: url('/public/images/BGImage2.jpg');
-    z-index: 1;
-    background-size: cover;
-    background-position: -510px center;
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .background {
-    background-position: 76% center;
-  }
 }
 
 /* Smooth scrolling for all elements */
@@ -41,18 +24,19 @@
 
 /* Individual course card styles */
 .course-card-wrapper {
-  flex: 1 1 300px;
-  flex: 0 0 30%; /* Consistent width (30% of the container) */
-  max-width: 30%; /* Prevent overflow */
-  height: 350px; /* Consistent height */
-  text-align: center; /* Center-align content */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  padding: 20px; /* Spacing inside the card */
-  border-radius: 10px; /* Rounded corners */
-  background-color: #fff; /* Consistent background color */
-  overflow: hidden; /* Prevent overflowing content */
-  margin: 10px; /* Uniform spacing between cards */
-  transition: transform 0.3s ease; /* Add hover effect */
+  flex: 0 0 calc(33.33% - 20px); /* Прилагоди ширина за 3 картички истовремено */
+  max-width: calc(33.33% - 20px); /* Ограничување за избегнување преклопување */
+  height: 400px; /* Зголемена висина */
+  width: 100%;
+  justify-content: space-between;
+  gap: 40px !important;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px; /* Add spacing between cards */
 }
 
 .course-card-wrapper:hover {
@@ -93,20 +77,16 @@
   padding: 20px 0; /* Optional padding */
 }
 
-@media (max-width: 480px) {
-  .course-card-wrapper {
-    flex-basis: 100%; /* Display one card per row on even smaller screens */
-  }
-}
-
 /* Wrapper for visible cards */
 .carousel-wrapper {
   display: flex;
-  gap: 20px; /* Spacing between cards */
-  overflow: hidden; /* Hide overflowing cards */
-  width: 70%; /* Limit visible width to show 3 cards */
+  justify-content: space-between; /* Еднакво растојание меѓу картичките */
+  overflow: hidden; /* Скриј ги картичките кои не се видливи */
+  width: 90%; /* Намалување на ширината за да бидат блиску до стрелките */
   position: relative;
   scroll-behavior: smooth;
+  gap: 20px; /* Растојание меѓу картичките */
+  margin: auto; /* Центрирај го каруселот */
 }
 
 /* Buttons for carousel navigation */
@@ -150,17 +130,25 @@
   /* fill: rgb(42, 42, 42);  */
 
   /* Change color on hover */
-  fill: rgb(85, 85, 85);
+  fill: rgb(131, 129, 129);
 }
 
 .carousel-control-next svg {
+  background-color: rgb(186, 183, 183);
   transform: rotate(180deg);
+  border-radius: 45%;
 }
 
 /* Positioning for navigation buttons */
 .carousel-control-prev {
   left: 20px;
   margin-top: 330px;
+  padding-right: 100px;
+}
+
+.carousel-control-prev svg {
+  background-color: rgb(186, 183, 183);
+  border-radius: 45%;
 }
 
 .carousel-control-next {
@@ -170,23 +158,16 @@
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-  /* Disable carousel on small screens */
-  .carousel-wrapper {
-    display: block; /* Stack cards vertically */
-    width: 100%; /* Full width for cards */
-    overflow: visible; /* Allow all content to be visible */
-  }
-
   .course-card-wrapper {
-    flex: 0 0 100%; /* Full width for each card */
-    max-width: 100%;
-    margin-bottom: 20px; /* Add spacing between cards */
+    flex: 0 0 calc(50% - 20px); /* Прикажи 2 картички истовремено */
+    max-width: calc(50% - 20px);
   }
+}
 
-  /* Hide carousel controls on small screens */
-  .carousel-control-prev,
-  .carousel-control-next {
-    display: none;
+@media (max-width: 480px) {
+  .course-card-wrapper {
+    flex: 0 0 calc(100% - 20px); /* Прикажи 1 картичка истовремено */
+    max-width: calc(100% - 20px);
   }
 }
 
@@ -194,6 +175,169 @@
   .carousel-wrapper {
     display: flex; /* Restore carousel for larger screens */
     gap: 20px;
-    width: 70.5%;
+    width: 85.5%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* Carousel wrapper setup for 3 cards */
+  .carousel-wrapper {
+    display: flex;
+    gap: 23px; /* Space between cards */
+    justify-content: space-between; /* Center the cards */
+    width: 90%; /* Container width */
+    margin: auto; /* Center the container */
+  }
+
+  /* Individual card styling */
+  .course-card-wrapper {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust for 3 cards */
+    max-width: calc(33.33% - 20px); /* Ensure cards don’t overflow */
+    height: 400px; /* Fixed card height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside cards */
+    background-color: #fff; /* White background */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+
+  .course-card-wrapper:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+
+  /* Carousel navigation buttons */
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10; /* Keep on top of cards */
+    cursor: pointer;
+  }
+
+  .carousel-control-prev svg,
+  .carousel-control-next svg {
+    width: 24px;
+    height: 24px;
+    fill: rgb(140, 140, 140);
+  }
+
+  .carousel-control-prev svg:hover,
+  .carousel-control-next svg:hover {
+    fill: rgb(80, 80, 80); /* Darker on hover */
+  }
+}
+
+@media (max-width: 1024px) {
+  .course-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Individual course card styles */
+  .course-card-wrapper {
+    flex: 0 0 calc(33.33% - 20px); /* Прилагоди ширина за 3 картички истовремено */
+    max-width: calc(33.33% - 20px); /* Ограничување за избегнување преклопување */
+    height: 400px; /* Зголемена висина */
+    width: 100%;
+    justify-content: space-between;
+    gap: 40px !important;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .course-card-wrapper:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    flex-basis: calc(50% - 20px);
+  }
+
+  /* Style for course card content */
+  .course-card-wrapper h3,
+  .course-card-wrapper p {
+    margin: 0 auto; /* Center text within the card */
+    text-align: center; /* Ensure text alignment is centered */
+  }
+
+  .course-card-wrapper h3 {
+    font-size: 1.5rem; /* Set consistent title size */
+    margin-bottom: 10px; /* Spacing between title and content */
+  }
+
+  .course-card-wrapper p {
+    font-size: 1rem; /* Set consistent font size for text */
+  }
+
+  /* Styling for images inside course cards */
+  .course-card-wrapper img {
+    width: 100%; /* Ensure the image takes up the full card width */
+    height: 100%;
+    object-fit: cover; /* Fit the image without cropping */
+  }
+
+  /* Center the carousel on the page */
+  .carousel-container {
+    display: flex;
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Align content horizontally */
+    height: auto; /* Adjust height as needed */
+    flex-direction: column;
+  }
+
+  /* Wrapper for visible cards */
+  .carousel-wrapper {
+    display: flex;
+    justify-content: space-between; /* Еднакво растојание меѓу картичките */
+    overflow: hidden; /* Скриј ги картичките кои не се видливи */
+    width: 90%; /* Намалување на ширината за да бидат блиску до стрелките */
+    scroll-behavior: smooth;
+    gap: 10px; /* Растојание меѓу картичките */
+  }
+
+  /* Buttons for carousel navigation */
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-right: -45px;
+    margin-left: -45px;
+    width: 50px; /* Adjust circle size */
+    height: 50px; /* Adjust circle size */
+    background: rgba(200, 200, 200, 0.8); /* Light gray background */
+    border: none; /* Remove borders */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%; /* Center vertically */
+    z-index: 10; /* Bring to front */
+    cursor: pointer; /* Pointer cursor */
+  }
+
+  /* Arrow styling */
+
+  /* .carousel-control-prev::before,
+  .carousel-control-next::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    display: block;
+  } */
+
+  .svgCarouselArrowCourse {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    background-color: rgb(140, 140, 140);
+    border-radius: 50%;
   }
 }
