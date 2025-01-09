@@ -136,9 +136,7 @@ const TestimoniesCarousel = () => {
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
                   alt=""
-                  className="rounded-circle shadow-1-strong mt-3 "
-                  width="150"
-                  height="150"
+                  className="profile-photo rounded-circle mt-3 "
                 />
                 <div className="card-body">
                   <h5 className="mb-3">Maria Smantha</h5>
@@ -158,9 +156,8 @@ const TestimoniesCarousel = () => {
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
                   alt=""
-                  className="rounded-circle shadow-1-strong mt-3"
-                  width="150"
-                  height="150"
+                  className="profile-photo rounded-circle mt-3"
+
                 />
                 <div className="card-body">
                   <h5 className="mb-3">Lisa Cudrow</h5>
@@ -180,9 +177,8 @@ const TestimoniesCarousel = () => {
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
                   alt=""
-                  className="rounded-circle shadow-1-strong mt-3"
-                  width="150"
-                  height="150"
+                  className="profile-photo rounded-circle mt-3"
+
                 />
                 <div className="card-body">
                   <h5 className="mb-3">John Smith</h5>
@@ -202,9 +198,8 @@ const TestimoniesCarousel = () => {
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
                   alt=""
-                  className="rounded-circle shadow-1-strong mt-3"
-                  width="150"
-                  height="150"
+                  className="profile-photo rounded-circle mt-3"
+
                 />
                 <div className="card-body">
                   <h5 className="mb-3">Jessica Storm</h5>
@@ -224,9 +219,8 @@ const TestimoniesCarousel = () => {
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
                   alt=""
-                  className="rounded-circle shadow-1-strong mt-3"
-                  width="150"
-                  height="150"
+                  className="profile-photo rounded-circle mt-3"
+
                 />
                 <div className="card-body">
                   <h5 className="mb-3">Bonnie West</h5>

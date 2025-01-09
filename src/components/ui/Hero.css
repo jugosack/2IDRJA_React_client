@@ -1,5 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@4000&display=swap');
 
+.display-2 {
+  color: white;
+}
+
+.descriptionText {
+  color: white;
+}
+
 .hero-content {
   font-family: 'Lora', serif;
+  margin: 30px;
+  margin-top: 2px;
+}
+
+.textContent {
+  padding: 5px;
+}
+
+.textContentDescription {
+  padding: 5px;
+}
+
+@media (max-width: 769px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 20px;
+    min-height: 500px;
+  }
+
+  .textContent {
+    margin-bottom: 10px; /* Add spacing between h1 and h5 */
+    padding: 15px;
+  }
+
+  .textContentDescription {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 426px) {
+  .hero-content {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 760px) {
+  .display-2,
+  .descriptionText {
+    padding: 15px;
+    backdrop-filter: blur(4px);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.333);
+  }
+}
+
+@media (max-width: 769px) {
+  .textContent,
+  .textContentDescription {
+    max-width: 360px;
+  }
+}
+
+/* for tablet */
+@media (min-width: 1026px) {
+  .textContent,
+  .textContentDescription {
+    max-width: 780px;
+    margin-left: 40px;
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1430px) {
+  .textContentDescription {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1028px) {
+  .textContent,
+  .textContentDescription {
+    max-width: 780px;
+    margin-left: 40px;
+  }
+
+  .textContentDescription {
+    margin-top: 60px;
+  }
+
+  .descriptionText {
+    max-width: 490px;
+  }
+}
+
+/* for tablet */
+@media (min-width: 426px) and (max-width: 769px) {
+  .textContent,
+  .textContentDescription {
+    max-width: 380px;
+    margin-right: 310px;
+  }
+}
+
+@media (max-width: 426px) {
+  .textContent,
+  .text-content-paragraph,
+  .textContentDescription {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 374px) {
+  .textContent,
+  .textContentDescription {
+    padding: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .textContentDescription {
+    padding-top: 20px;
+  }
 }

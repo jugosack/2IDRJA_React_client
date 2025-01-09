@@ -29,7 +29,13 @@
   /* background-color: rgb(230, 230, 230); */
   background-color: rgb(235, 235, 240);
   min-height: 448px;
-  padding-top: 6rem;
+  padding-top: 64px;
+}
+
+@media (min-width: 767px) {
+  .CounterSection {
+    padding-top: 96px;
+  }
 }
 
 .DiscoverTitle {
@@ -41,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 87%;
+  width: 85%;
   max-width: 1200px;
   margin: 5px auto;
 }
@@ -73,7 +79,7 @@
 .grid-item {
   display: flex; /* Enable Flexbox */
   flex-direction: column; /* Stack the circle above the text */
-  justify-content: center; /* Center items horizontally */
+  justify-content: start; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   flex: 0 0 auto;
   width: 200px; /* Fixed width */
@@ -84,6 +90,13 @@
   /* border: 1px solid #ccc; */
   text-align: center; /* Optional: Center text within the grid item */
   font: bold 18px 'Noto Sans', sans-serif;
+}
+
+@media (max-width: 769px) {
+  .grid-item {
+    width: 180px; /* Fixed width */
+    height: 200px; /* Fixed height */
+  }
 }
 
 .LargeCircle {
@@ -98,7 +111,7 @@
   border: 4px solid black;
   background-color: rgb(255, 255, 255);
   line-height: normal; /* Ensure normal line height */
-  margin-bottom: 16px; /* Space between circle and text */
+  margin-bottom: 12px; /* Space between circle and text */
 }
 
 @media (min-width: 1435px) {
@@ -123,9 +136,23 @@
   .flex-grid {
     gap: 0;
   }
+}
 
+/* discover/counter Circles on mobile S screen */
+@media (max-width: 325px) {
   .grid-item {
-    width: 180px; /* Fixed width */
-    height: 200px; /* Fixed height */
+    width: 130px; /* Fixed width */
+    height: 190px; /* Fixed height */
+    margin-left: 10px;
+    margin-right: 10px;
   }
+
+  .LargeCircle {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* .flex-grid {
+    gap: 0.2rem;
+  } */
 }

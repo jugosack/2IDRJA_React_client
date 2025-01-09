@@ -66,6 +66,11 @@
   bottom: -24px !important;
 }
 
+.slick-list {
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+}
+
 .slick-slide .card {
   border: none; /* Removes the border from the card element inside the slick slide */
   box-shadow: 5px 5px;
@@ -79,6 +84,12 @@
   box-sizing: border-box; /* Prevents padding from increasing card width */
 }
 
+@media (max-width: 769px) {
+  .slick-slide .card {
+    padding-left: 0;
+  }
+}
+
 .carouselKarticka .card-img {
   flex-shrink: 0;
   width: 150px;
@@ -87,7 +98,7 @@
   margin-bottom: 1rem; /* Add spacing below the image */
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1941px) {
   .carouselKarticka {
     flex-direction: column;
   }
@@ -157,4 +168,57 @@
 
 .slider-container .slick-slide {
   padding: 0 15px; /* Adds more space between each slide */
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+}
+
+/* adjustments for mobile S 320px screen testimonies carousel */
+@media (max-width: 321px) {
+  /* changes card width using margins */
+  .slick-list {
+    margin-right: -10px !important;
+    margin-left: -10px !important;
+  }
+
+  .custom-next-arrow svg {
+    /* display: none; */
+    position: relative;
+    right: -10px;
+  }
+
+  .custom-prev-arrow svg {
+    position: relative;
+    right: 5px;
+  }
+
+  .card-body {
+    min-height: 250px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+/* adjustments for mobile M 375px screen testimonies carousel */
+@media (min-width: 322px) and (max-width: 376px) {
+  .slick-list {
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+  }
+}
+
+/* adjustments for mobile L 425px screen testimonies carousel */
+@media (min-width: 420px) and (max-width: 428px) {
+  .custom-next-arrow svg {
+    /* display: none; */
+    position: relative;
+    right: 5px;
+  }
+
+  .custom-prev-arrow svg {
+    position: relative;
+    right: -10px;
+  }
 }
