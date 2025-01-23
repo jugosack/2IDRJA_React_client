@@ -10,7 +10,7 @@ const OurCoreBeliefs = () => {
 
   return (
     <div className="d-flex flex-md-row flex-sm-column background-info py-5 w-100 w-lg-auto">
-      <div className="frame mt-5">
+      <div className="frame mt-lg-5">
         <div className="d-flex flex-lg-row flex-md-column">
           <div className="col-lg-6 col-sm-12">
             <h2 className="mt-3 my-4 ms-5">Our core beliefs</h2>

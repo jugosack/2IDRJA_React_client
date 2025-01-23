@@ -74,7 +74,7 @@
   justify-content: center; /* Align content horizontally */
   position: relative;
   height: auto; /* Adjust height as needed */
-  padding: 20px 0; /* Optional padding */
+  padding: 3rem !important;
 }
 
 /* Wrapper for visible cards */
@@ -292,6 +292,7 @@
     justify-content: center; /* Align content horizontally */
     height: auto; /* Adjust height as needed */
     flex-direction: column;
+    padding: 20px;
   }
 
   /* Wrapper for visible cards */
@@ -307,8 +308,8 @@
   /* Buttons for carousel navigation */
   .carousel-control-prev,
   .carousel-control-next {
-    margin-right: -45px;
-    margin-left: -45px;
+    /* margin-right: -45px;
+    margin-left: -45px; */
     width: 50px; /* Adjust circle size */
     height: 50px; /* Adjust circle size */
     background: rgba(200, 200, 200, 0.8); /* Light gray background */
@@ -322,17 +323,6 @@
     cursor: pointer; /* Pointer cursor */
   }
 
-  /* Arrow styling */
-
-  /* .carousel-control-prev::before,
-  .carousel-control-next::before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    display: block;
-  } */
-
   .svgCarouselArrowCourse {
     width: 30px;
     height: 30px;
@@ -341,3 +331,65 @@
     border-radius: 50%;
   }
 }
+/* mobile scrceen L */
+@media (max-width: 430px) {
+  .carousel-control-prev {
+    margin-left: 0px;
+  }
+  .carousel-control-next {
+    margin-right: 0px;
+  }
+  .carousel-container {
+    padding: 48px !important;
+    padding-left: 73px !important;
+    padding-right: 70px !important;
+  }
+  .carousel-wrapper {
+    margin: 0px;
+    gap: 23px;
+  }
+  .background {
+    background-position: 85% center;
+  }
+}
+
+/* mobile screen M */
+@media (max-width: 380px) {
+  .carousel-container {
+    padding: 48px !important;
+    padding-left: 42px !important;
+    padding-right: 30px !important;
+  }
+  .background {
+    background-position: -77% center;
+  }
+}
+
+/* mobile screen S */
+@media (max-width: 325px) {
+  .carousel-container {
+    padding: 48px !important;
+    padding-left: 17px !important;
+    padding-right: 20px !important;
+  }
+  .carousel-wrapper {
+    margin: 0px;
+    gap: 22px;
+  }
+  .carousel-control-prev {
+    margin-left: -7px;
+  }
+  .carousel-control-next {
+    margin-right: 3px;
+    width: 30px !important;
+  }
+  .background {
+    background-position: -67% center;
+  }
+}
+/* Mobile physical screen size 412?????? */
+/* @media (min-width: 412px) and (max-width: 413px) {
+  .background {
+  background-position: -66% center;
+  }
+} */

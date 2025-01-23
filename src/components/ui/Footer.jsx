@@ -9,12 +9,14 @@ import YouTubeIcon from '../icons/YouTube icon.svg';
 
 // Functional component
 const Footer = () => (
-  <div className="bg-primary text-white p-5">
+  <div className="bg-primary text-white p-5 pb-3">
     {/* 1st row */}
     <div className="row">
-      <div className="col-lg-4 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center p-3">
+      <div className="col-lg-4 col-md-6 col-sm-12 d-flex flex-column
+      justify-content-center align-items-center p-3 footer-section"
+      >
         <Link className="navbar-brand" to="/">
-          <img className="logo" src={logo} alt="logo of 2DRIJA" style={{ width: '70px' }} />
+          <img className="logo-footer" src={logo} alt="logo of 2DRIJA" />
         </Link>
         <p className="text-center">Copyright &copy; 2019 2IDRJA.</p>
         <p className="text-center">All rights reserved</p>
@@ -49,10 +51,11 @@ const Footer = () => (
         <p className="pb-3 text-start fs-4">Stay up to date</p>
         <input
           type="email"
+          id="email-Input-Field"
           className="form-control contact-us-form email-contact email-form"
           placeholder="Your email address ..."
         />
-        <button type="button" className="contact-us-btn mt-3 ps-1 pe-1 ">
+        <button type="button" id="email-Input-Field" className="contact-us-btn mt-3 ps-1 pe-1 ">
           Contact us
           <img src={Send} alt="send" />
         </button>

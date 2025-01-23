@@ -21,7 +21,7 @@ function Home() {
   };
 
   const scrollPrev = () => {
-    carouselRef.current.scrollBy({ left: -290, behavior: 'smooth' }); // Adjust scroll distance if needed
+    carouselRef.current.scrollBy({ left: -280, behavior: 'smooth' }); // Adjust scroll distance if needed
   };
 
   return (
@@ -35,7 +35,7 @@ function Home() {
         <OurCoreBeliefs />
 
       </div>
-      <div className="carousel-container p-5">
+      <div className="carousel-container">
         {/* Previous button comes first */}
         <button
           className="carousel-control-prev"

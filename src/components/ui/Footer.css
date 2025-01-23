@@ -13,6 +13,43 @@
   border-radius: 4px;
 }
 
-.email-form {
+/* .email-form {
   max-width: 250px;
+} */
+
+#email-Input-Field{
+  width: 100% !important;
+}
+.logo-footer{
+width: 130px;
+}
+
+/* @media (min-width: 360px) and (max-width: 380px) {
+  #email-Input-Field{
+    width: 300px !important;
+  }
+}
+@media (min-width: 420px){
+  #email-Input-Field{
+    width: 330px !important;
+  }
+}
+
+@media (min-width: 1430px) {
+  #email-Input-Field{
+    width: 400px !important;
+  }
+} */
+
+/* reorder logo to bottom on mobile */
+@media (max-width: 450px) {
+  .footer-section{
+    /* Moves this section to appear last */
+    order: 3; 
+  }
+  
+  /* Optionally reorder other columns for better control */
+  /* .footer-section + .col-md-6 {
+    order: 1; 
+  } */
 }
