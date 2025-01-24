@@ -17,11 +17,12 @@
   max-width: 250px;
 } */
 
-#email-Input-Field{
+#email-Input-Field {
   width: 100% !important;
 }
-.logo-footer{
-width: 130px;
+
+.logo-footer {
+  width: 130px;
 }
 
 /* @media (min-width: 360px) and (max-width: 380px) {
@@ -43,13 +44,14 @@ width: 130px;
 
 /* reorder logo to bottom on mobile */
 @media (max-width: 450px) {
-  .footer-section{
+  .footer-section {
     /* Moves this section to appear last */
-    order: 3; 
+    order: 3;
   }
-  
+
   /* Optionally reorder other columns for better control */
+
   /* .footer-section + .col-md-6 {
-    order: 1; 
+    order: 1;
   } */
 }

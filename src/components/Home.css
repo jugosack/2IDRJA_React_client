@@ -331,23 +331,28 @@
     border-radius: 50%;
   }
 }
+
 /* mobile scrceen L */
 @media (max-width: 430px) {
   .carousel-control-prev {
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   .carousel-control-next {
-    margin-right: 0px;
+    margin-right: 0;
   }
+
   .carousel-container {
     padding: 48px !important;
     padding-left: 73px !important;
     padding-right: 70px !important;
   }
+
   .carousel-wrapper {
-    margin: 0px;
+    margin: 0;
     gap: 23px;
   }
+
   .background {
     background-position: 85% center;
   }
@@ -360,6 +365,7 @@
     padding-left: 42px !important;
     padding-right: 30px !important;
   }
+
   .background {
     background-position: -77% center;
   }
@@ -372,22 +378,28 @@
     padding-left: 17px !important;
     padding-right: 20px !important;
   }
+
   .carousel-wrapper {
-    margin: 0px;
+    margin: 0;
     gap: 22px;
   }
+
   .carousel-control-prev {
     margin-left: -7px;
   }
+
   .carousel-control-next {
     margin-right: 3px;
     width: 30px !important;
   }
+
   .background {
     background-position: -67% center;
   }
 }
+
 /* Mobile physical screen size 412?????? */
+
 /* @media (min-width: 412px) and (max-width: 413px) {
   .background {
   background-position: -66% center;
