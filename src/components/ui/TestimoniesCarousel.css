@@ -10,14 +10,15 @@
 }
 
 /* Center the carousel on the page */
-.carousel-container {
+
+/* .carousel-container {
   display: flex;
-  align-items: center; /* Align content vertically */
-  justify-content: center; /* Align content horizontally */
+  align-items: center;
+  justify-content: center;
   position: relative;
-  height: auto; /* Adjust height as needed */
-  padding: 20px 0; /* Optional padding */
-}
+  height: auto;
+  padding: 20px 0;
+} */
 
 .custom-prev-arrow svg {
   position: relative;

@@ -6,8 +6,6 @@
   padding: 0.5rem 0;
   background-color: transparent;
   color: black;
-
-  /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
 }
 
 .brand-name {
@@ -92,6 +90,12 @@
     margin: 0;
   }
 
+  .listDropdown a {
+    text-align: center;
+    font-size: 14px;
+    color: #fafafacd !important;
+  }
+
   .navigation-menu li a {
     color: black;
 
@@ -108,6 +112,83 @@
   .navigation-menu.expanded ul {
     display: block;
   }
+
+  .absoluteBox {
+    position: absolute;
+    right: 3%;
+    top: 90px;
+    z-index: 3;
+    background-color: #2b273ecf;
+    backdrop-filter: blur(5px);
+
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+
+    /* width: clamp(180px, 30%, 230px); */
+    min-width: 180px;
+
+    /* preffered-width: 30%; */
+    max-width: 230px;
+
+    /* max-width: 200px;
+    min-width: 180px; */
+    display: flex;
+    border-radius: 15px;
+  }
+
+  .dropdown-menu {
+    background-color: #322a3700 !important;
+    border: none !important;
+    min-width: 60px !important;
+    padding-top: 0 !important;
+    padding-bottom: 15px !important;
+  }
+
+  .dropdown-item {
+    padding-top: 4px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    color: white !important;
+
+    /* align-self: flex-end; */
+  }
+
+  /* flex settings */
+  .listDropdown,
+  .dropdownAlignmentFixing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .listDropdown a:hover{
+    background-color: #09070acf;
+  } */
+  .dropdown-menu :hover {
+    background-color: #261c2b48 !important;
+  }
+
+  #navbarSupportedContent li {
+    border-bottom: 1px solid #ccc; /* Change the color as needed */
+  }
+
+  #login-icon {
+    border-top: 1px solid #ccc;
+  }
+
+  #navbarSupportedContent li:last-child {
+    border-bottom: none;
+  }
+
+  /* .listDropdown{
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+  }
+  .dropdownAlignmentFixing{
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+  } */
 }
 
 /* .user-icon {
