@@ -92,7 +92,9 @@
 /* Buttons for carousel navigation */
 .carousel-control-prev,
 .carousel-control-next {
-  width: 50px; /* Adjust circle size */
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 30px !important;/* Adjust circle size */
   height: 50px; /* Adjust circle size */
   background: rgba(200, 200, 200, 0.8); /* Light gray background */
   border: none; /* Remove borders */
@@ -303,6 +305,7 @@
     width: 90%; /* Намалување на ширината за да бидат блиску до стрелките */
     scroll-behavior: smooth;
     gap: 10px; /* Растојание меѓу картичките */
+    margin: 0;
   }
 
   /* Buttons for carousel navigation */

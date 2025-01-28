@@ -72,7 +72,7 @@
   margin-left: 20px !important;
 }
 
-.slick-slide .card {
+.card {
   border: none; /* Removes the border from the card element inside the slick slide */
   box-shadow: 5px 5px;
   margin-bottom: 20px;
@@ -118,7 +118,7 @@
   box-sizing: border-box; /* Prevents padding from increasing the card width */
 }
 
-.card-body {
+.card-bo.slick-slide {
   max-width: 400px;
   min-height: 200px;
   height: 100%;
@@ -138,12 +138,6 @@
 @media (min-width: 767px) and (max-width: 1020px) {
   .card-body {
     min-height: 200px; /* Display one card per row on even smaller screens */
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1439px) {
-  .card-body {
-    min-height: 450px; /* Display one card per row on even smaller screens */
   }
 }
 
