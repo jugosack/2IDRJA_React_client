@@ -116,9 +116,9 @@
   .absoluteBox {
     position: absolute;
     right: 3%;
-    top: 90px;
+    top: 100px;
     z-index: 3;
-    background-color: #2b273ecf;
+    background-color: #14142bd6;
     backdrop-filter: blur(5px);
 
     /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@4000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
+.container-mission {
+  background-color: rgb(235, 235, 240);
+}
+
 .What-we-do-text {
   margin-bottom: 40px;
 }
@@ -20,8 +24,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* Limit to 4 lines */
-  line-clamp: 4; /* Standard property for compatibility */
+  -webkit-line-clamp: 4;
+
+  /* Limit to 4 lines */
+  line-clamp: 4;
+
+  /* Standard property for compatibility */
   -webkit-box-orient: vertical;
   white-space: normal;
   word-wrap: break-word;
@@ -36,11 +44,19 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* Number of lines to show */
+  -webkit-line-clamp: 4;
+
+  /* Number of lines to show */
   -webkit-box-orient: vertical;
-  line-clamp: 4; /* Standard property for compatibility */
-  white-space: normal; /* Prevents nowrap behavior */
-  word-wrap: break-word; /* Ensures text wraps correctly */
+  line-clamp: 4;
+
+  /* Standard property for compatibility */
+  white-space: normal;
+
+  /* Prevents nowrap behavior */
+  word-wrap: break-word;
+
+  /* Ensures text wraps correctly */
 }
 
 .text-truncated-inline {
@@ -48,7 +64,9 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 100%; /* Prevents overflow */
+  max-width: 100%;
+
+  /* Prevents overflow */
 }
 
 .toggle-text-inline {
@@ -57,11 +75,29 @@
   right: 0;
   font-weight: bold;
   cursor: pointer;
-  color: black; /* Example color */
+  color: black;
+
+  /* Example color */
 
   /* background: #fafafa; */
   background: linear-gradient(to left, rgba(250, 250, 250, 1) 72%, rgba(250, 250, 250, 0.152) 100%);
-  padding-left: 5px; /* Add small space before the button */
+  padding-left: 5px;
+
+  /* Add small space before the button */
+  display: inline;
+}
+
+#see-more-overlap {
+  background: linear-gradient(to left, rgba(235, 235, 240, 1) 72%, rgba(250, 250, 250, 0.152) 100%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  padding-left: 5px;
+
+  /* Add small space before the button */
   display: inline;
 }
 
@@ -71,7 +107,9 @@
 
 .paragraph {
   max-width: 100%;
-  word-wrap: break-word; /* Prevents breaking issues */
+  word-wrap: break-word;
+
+  /* Prevents breaking issues */
 }
 
 #see-more-overlap-our-core-beliefs {
@@ -153,18 +191,28 @@
 
 @media (max-width: 768px) {
   .text-truncated {
-    -webkit-line-clamp: 4; /* Adjust for smaller screens */
-    line-clamp: 4; /* Standard property for compatibility */
+    -webkit-line-clamp: 4;
+
+    /* Adjust for smaller screens */
+    line-clamp: 4;
+
+    /* Standard property for compatibility */
   }
 }
 
 @media (min-width: 769px) {
-  .toggle-text-inline {
-    display: none; /* Hide toggle on larger screens */
+
+  .toggle-text-inline,
+  #see-more-overlap {
+    display: none;
+
+    /* Hide toggle on larger screens */
   }
 
   .toggle-text {
-    display: none; /* Hide toggle text on larger screens */
+    display: none;
+
+    /* Hide toggle text on larger screens */
   }
 }
 
@@ -174,7 +222,9 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 4;
-    line-clamp: 4; /* Standard property for compatibility */
+    line-clamp: 4;
+
+    /* Standard property for compatibility */
     -webkit-box-orient: vertical;
   }
 }
@@ -182,15 +232,25 @@
 /* Ensure full text displays on larger screens */
 @media (min-width: 769px) {
   .toggle-text {
-    display: none; /* Hide toggle text on larger screens */
+    display: none;
+
+    /* Hide toggle text on larger screens */
   }
 
   .text-truncated-mobile {
-    -webkit-line-clamp: unset; /* Remove line clamp */
+    -webkit-line-clamp: unset;
+
+    /* Remove line clamp */
     line-clamp: unset;
-    display: block; /* Reset display */
-    overflow: visible; /* Reset overflow */
-    text-overflow: unset; /* No truncation */
+    display: block;
+
+    /* Reset display */
+    overflow: visible;
+
+    /* Reset overflow */
+    text-overflow: unset;
+
+    /* No truncation */
   }
 }
 
@@ -200,7 +260,9 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 4;
-    line-clamp: 4; /* Standard property for compatibility */
+    line-clamp: 4;
+
+    /* Standard property for compatibility */
     -webkit-box-orient: vertical;
   }
 }
@@ -313,6 +375,7 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+
   .flex-lg-row,
   .flex-md-column {
     flex-direction: column;

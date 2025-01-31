@@ -104,6 +104,13 @@ const TestimoniesCarousel = () => {
         },
       },
       {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,

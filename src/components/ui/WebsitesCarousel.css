@@ -1,0 +1,132 @@
+.website-screenshot-desktop {
+    width: 100%;
+
+    /* max-width: 1200px; */
+}
+
+#card-body-websites {
+    min-height: 0px;
+}
+
+.svgCarouselArrowWebsites {
+    fill: white;
+    background-color: rgb(223, 223, 231);
+    border-radius: 50%;
+}
+
+#slider-containerWebsites .slick-dots {
+    bottom: -20px !important;
+}
+
+.SectionWebsitesCarousel {
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.carddd img {
+    border: 2px solid #171457a8;
+    border-radius: 12px;
+}
+
+#kartickaWebsajt {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    transition: transform 3.3s ease, box-shadow 1.5s ease;
+    transform: scale(1);
+
+}
+
+#kartickaWebsajt :hover {
+    /* border: 5px solid #0a213ae9; */
+    box-shadow: 2px 3px 12px 1px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+    /* outline-offset: -20px; */
+    transform: scale(0.989);
+}
+
+/* for ALL desktop srceens */
+@media (min-width: 1000px) {
+
+    /* adjustes the WIDTH of the website carousel and this changes the HEIGHT as well */
+    #slider-containerWebsites {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    /* .SectionWebsitesCarousel {
+        min-height: 600px;
+    } */
+}
+
+/* for ALL mobiles */
+@media (max-width: 450px) {
+    #slider-containerWebsites {
+        margin-left: 1.8rem !important;
+        margin-right: 1.8rem !important;
+    }
+
+    #slider-containerWebsites .slick-list {
+        margin-left: 3px !important;
+        margin-right: 3px !important;
+    }
+}
+
+/* adjustments for mobile S 320px screen testimonies carousel */
+@media (max-width: 321px) {
+    #custom-next-arrow-websites svg {
+        position: relative;
+        right: -5px;
+    }
+
+    #custom-prev-arrow-websites svg {
+        right: 0px;
+    }
+
+}
+
+/* adjustments for mobile M 375 px screen testimonies carousel  */
+/* @media (min-width: 325px) and (max-width: 415px) {
+
+} */
+
+/* adjustments for mobile L 425px screen testimonies carousel  */
+@media (min-width: 420px) and (max-width: 428px) {
+    #custom-next-arrow-websites svg {
+        right: -5px;
+    }
+
+    #custom-prev-arrow-websites svg {
+        right: 0px;
+    }
+
+    /* .slider-containerWebsites .custom-next-arrow svg {
+        position: relative;
+    }    */
+}
+
+/* for Tablet screens */
+@media (min-width: 500px) and (max-width:900px) {
+    #custom-next-arrow-websites svg {
+        right: 10px;
+    }
+
+    #custom-prev-arrow-websites svg {
+        right: -15px;
+    }
+}
+
+
+/* for 4k screens */
+@media (min-width: 2000px) {
+    .carddd {
+        display: flex !important;
+    }
+
+    #kartickaWebsajt {
+        align-self: center;
+    }
+}
