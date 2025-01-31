@@ -11,6 +11,7 @@ import VisitorCounter from './ui/VisitorCounter';
 import TestimoniesCarousel from './ui/TestimoniesCarousel';
 import WhatWeDo from './ui/WhatWeDo';
 import OurCoreBeliefs from './ui/OurCoreBeliefs';
+import WebsiteCarousel from './ui/WebsitesCarousel';
 import { ReactComponent as ArrowSVGL } from './icons/small-arrow-prev-small-svgrepo-com.svg';
 
 function Home() {
@@ -111,6 +112,7 @@ function Home() {
       </div>
 
       <VisitorCounter />
+      <WebsiteCarousel />
       <OurMisiion />
       <WhatWeDo />
 
