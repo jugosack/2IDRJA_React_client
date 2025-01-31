@@ -201,7 +201,6 @@
 }
 
 @media (min-width: 769px) {
-
   .toggle-text-inline,
   #see-more-overlap {
     display: none;
@@ -375,7 +374,6 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-
   .flex-lg-row,
   .flex-md-column {
     flex-direction: column;
