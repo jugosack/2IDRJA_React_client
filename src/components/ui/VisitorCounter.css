@@ -1,184 +1,184 @@
 
-  .visits {
-    display: flex; /* Enable Flexbox */
-    flex-direction: column; /* Stack the circle above the text */
-    justify-content: center; /* Center items horizontally */
-    color: white;
-    font-size: 24px;
-    margin: 0.5rem 0;
-    padding: 0.5rem 0;
-  }
+.visits {
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack the circle above the text */
+  justify-content: center; /* Center items horizontally */
+  color: white;
+  font-size: 24px;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+}
 
-  .text-box {
-    margin: 10px;
-    min-width: 230px;
-    min-height: 150px;
-    display: inline-block; /* Ensures the box fits the text content */
-    padding: 10px 20px; /* Adds space inside the box */
-    border: 6px solid white; /* Defines the border thickness and color */
-    border-radius: 25px; /* Rounds the corners */
+.text-box {
+  margin: 10px;
+  min-width: 230px;
+  min-height: 150px;
+  display: inline-block; /* Ensures the box fits the text content */
+  padding: 10px 20px; /* Adds space inside the box */
+  border: 6px solid white; /* Defines the border thickness and color */
+  border-radius: 25px; /* Rounds the corners */
 
-    /* color: black;  */
+  /* color: black;  */
 
-    /* background-color: white; */
-  }
+  /* background-color: white; */
+}
 
+.CounterSection {
+  /* background-color: rgba(11, 16, 41, 0.816); */
+
+  /* background-color: rgb(230, 230, 230); */
+  background-color: rgb(235, 235, 240);
+  min-height: 448px;
+  padding-top: 64px;
+}
+
+@media (min-width: 767px) {
   .CounterSection {
-    /* background-color: rgba(11, 16, 41, 0.816); */
-
-    /* background-color: rgb(230, 230, 230); */
-    background-color: rgb(235, 235, 240);
-    min-height: 448px;
-    padding-top: 64px;
+    padding-top: 96px;
   }
+}
 
-  @media (min-width: 767px) {
-    .CounterSection {
-      padding-top: 96px;
-    }
-  }
+.DiscoverTitle {
+  text-align: center;
+  padding-bottom: 0.8rem;
+}
 
-  .DiscoverTitle {
-    text-align: center;
-    padding-bottom: 0.8rem;
-  }
+.DiscoverLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  max-width: 1200px;
+  margin: 5px auto;
+}
 
-  .DiscoverLine {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 85%;
-    max-width: 1200px;
-    margin: 5px auto;
-  }
+.DiscoverLine hr {
+  opacity: 1;
+  flex: 1;
+  border: 0;
+  border-top: 0.1rem solid #24263a;
+  margin: 0 auto;
+}
 
-  .DiscoverLine hr {
-    opacity: 1;
-    flex: 1;
-    border: 0;
-    border-top: 0.1rem solid #24263a;
-    margin: 0 auto;
-  }
+.DiscoverLine .circle {
+  width: 0.4rem !important;
+  height: 0.4rem !important;
+  background-color: #24263a;
+  border-radius: 50%;
+  display: inline-block;
+}
 
-  .DiscoverLine .circle {
-    width: 0.4rem !important;
-    height: 0.4rem !important;
-    background-color: #24263a;
-    border-radius: 50%;
-    display: inline-block;
-  }
+.flex-grid {
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto a new row if there's no space */
+  gap: 3rem; /* Optional: Adds spacing between items */
+}
 
-  .flex-grid {
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto a new row if there's no space */
-    gap: 3rem; /* Optional: Adds spacing between items */
-  }
+.grid-item {
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack the circle above the text */
+  justify-content: start; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  flex: 0 0 auto;
+  width: 200px; /* Fixed width */
+  height: 250px; /* Fixed height */
+  box-sizing: border-box; /* Ensures padding/border do not affect width */
+  padding: 10px; /* Optional: Adds inner spacing */
 
+  /* border: 1px solid #ccc; */
+  text-align: center; /* Optional: Center text within the grid item */
+  font: bold 18px 'Noto Sans', sans-serif;
+}
+
+@media (max-width: 769px) {
   .grid-item {
-    display: flex; /* Enable Flexbox */
-    flex-direction: column; /* Stack the circle above the text */
-    justify-content: start; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    flex: 0 0 auto;
-    width: 200px; /* Fixed width */
-    height: 250px; /* Fixed height */
-    box-sizing: border-box; /* Ensures padding/border do not affect width */
-    padding: 10px; /* Optional: Adds inner spacing */
-
-    /* border: 1px solid #ccc; */
-    text-align: center; /* Optional: Center text within the grid item */
-    font: bold 18px 'Noto Sans', sans-serif;
+    width: 180px; /* Fixed width */
+    height: 200px; /* Fixed height */
   }
+}
 
-  @media (max-width: 769px) {
-    .grid-item {
-      width: 180px; /* Fixed width */
-      height: 200px; /* Fixed height */
-    }
+.LargeCircle {
+  font: bold 34px 'Noto Sans', sans-serif;
+  display: flex; /* Use Flexbox for alignment */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  text-align: center; /* Optional: For multi-line text alignment */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid black;
+  background-color: rgb(255, 255, 255);
+  line-height: normal; /* Ensure normal line height */
+  margin-bottom: 12px; /* Space between circle and text */
+}
+
+@media (min-width: 1435px) {
+  .flex-grid {
+    gap: 7rem;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1024px) {
+  .flex-grid {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .flex-grid {
+    gap: 0;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 770px) {
+  .flex-grid {
+    gap: 0;
+  }
+}
+
+/* discover/counter Circles on mobile S screen */
+@media (max-width: 325px) {
+  .grid-item {
+    width: 130px; /* Fixed width */
+    height: 190px; /* Fixed height */
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .LargeCircle {
-    font: bold 34px 'Noto Sans', sans-serif;
-    display: flex; /* Use Flexbox for alignment */
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
-    text-align: center; /* Optional: For multi-line text alignment */
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid black;
-    background-color: rgb(255, 255, 255);
-    line-height: normal; /* Ensure normal line height */
-    margin-bottom: 12px; /* Space between circle and text */
+    width: 100px;
+    height: 100px;
   }
 
-  @media (min-width: 1435px) {
-    .flex-grid {
-      gap: 7rem;
-    }
-  }
-
-  @media (min-width: 1020px) and (max-width: 1024px) {
-    .flex-grid {
-      gap: 3rem;
-    }
-  }
-
-  @media (max-width: 426px) {
-    .flex-grid {
-      gap: 0;
-    }
-  }
-
-  @media (min-width: 765px) and (max-width: 770px) {
-    .flex-grid {
-      gap: 0;
-    }
-  }
-
-  /* discover/counter Circles on mobile S screen */
-  @media (max-width: 325px) {
-    .grid-item {
-      width: 130px; /* Fixed width */
-      height: 190px; /* Fixed height */
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    .LargeCircle {
-      width: 100px;
-      height: 100px;
-    }
-
-    /* .flex-grid {
+  /* .flex-grid {
       gap: 0.2rem;
     } */
-  }
+}
+
+.CounterSection .flex-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dve koloni za tablet */
+  gap: 2rem; /* Manji razmak pomedju itemite */
+  justify-items: center; /* Centrirajte elementite horizontalno */
+  align-items: center; /* Centrirajte elementite vertikalno */
+  padding: 1rem; /* Razmak oko sadržaja */
+}
+
+@media (max-width: 768px) {
   .CounterSection .flex-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dve koloni za tablet */
-    gap: 2rem; /* Manji razmak pomedju itemite */
-    justify-items: center; /* Centrirajte elementite horizontalno */
-    align-items: center; /* Centrirajte elementite vertikalno */
-    padding: 1rem; /* Razmak oko sadržaja */
+    grid-template-columns: repeat(2, 1fr); /* 2 koloni na tablet */
+    gap: 2rem; /* Razmak pomedju itemite */
   }
-  
-  @media (max-width: 768px) {
-    .CounterSection .flex-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 koloni na tablet */
-      gap: 2rem; /* Razmak pomedju itemite */
-    }
-  
-    .grid-item {
-      width: 160px; /* Smanjena širina za tablet */
-      height: 200px; /* Smanjena visina za tablet */
-    }
-  
-    .LargeCircle {
-      width: 100px; /* Smanjena širina kruga za tablet */
-      height: 100px; /* Smanjena visina kruga za tablet */
-    }
+
+  .grid-item {
+    width: 160px; /* Smanjena širina za tablet */
+    height: 200px; /* Smanjena visina za tablet */
   }
-  
+
+  .LargeCircle {
+    width: 100px; /* Smanjena širina kruga za tablet */
+    height: 100px; /* Smanjena visina kruga za tablet */
+  }
+}

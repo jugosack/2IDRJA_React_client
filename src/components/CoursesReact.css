@@ -3,9 +3,7 @@
   object-fit: cover !important;
 }
 
-
 @media (max-width: 991px) {
-
   /* Set image first */
   .d-flex.flex-column.col-lg-4.col-12 {
     order: -2; /* Moves image to the top */
@@ -22,5 +20,4 @@
   .d-flex.flex-column.col-lg-7.col-12 p {
     text-align: left;
   }
-
 }
