@@ -110,6 +110,10 @@ const CourseReact = () => (
 
       {/* instructor 2 */}
       <div className="d-flex flex-column flex-lg-row mt-4 mb-3">
+        {/* image */}
+        <div className="d-flex flex-column col-lg-4 col-12 align-self-start">
+          <img className="img-fluid" src={profileImg2} alt="Project" />
+        </div>
         {/* text */}
         <div className="d-flex flex-column col-lg-7 col-12  mt-2 align-self-start ">
           <h1 className="mt-3 mx-5">Full Name 2</h1>
@@ -136,10 +140,6 @@ const CourseReact = () => (
             <br />
             🚀 💻 #CodeWithConfidence #FrontEndInstructor
           </p>
-        </div>
-        {/* image */}
-        <div className="d-flex flex-column col-lg-4 col-12 align-self-start">
-          <img className="img-fluid" src={profileImg2} alt="Project" />
         </div>
       </div>
 
